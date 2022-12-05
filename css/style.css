@@ -1,13 +1,14 @@
-/*
-  Template Name: MyPortfolio
-  Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com/
-  */
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+
+@media (min-width: 1200px)
+{
+.container, 
+.container-lg, 
+.container-md, 
+.container-sm, 
+.container-xl { max-width: 1200px !important;}
+}
+
 
 body {
   font-family: "GT Walsheim Pro", sans-serif;
@@ -358,6 +359,8 @@ background:rgba(255,255,255,.3)!important;
   position: relative;
   /*overflow: hidden;*/
   margin-bottom: 4rem;
+  padding-left:20px;
+  padding-right:20px;
 }
 
 .item .item-wrap:after {
@@ -441,10 +444,19 @@ background:rgba(255,255,255,.3)!important;
   text-decoration: none;
 }
 
+.item .item-wrap img,video{
+  transition:.3s ease;
+}
+
 .item .item-wrap:hover img {
-  -webkit-transform: scale(1.05);
+  -webkit-transform: scale(.95);
   transform: scale(.95);
 }
+.item .item-wrap:hover video {
+  -webkit-transform: scale(.95);
+  transform: scale(.95);
+}
+
 
 .item .item-wrap:hover:after {
   opacity: 1;

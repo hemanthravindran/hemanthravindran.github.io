@@ -206,3 +206,16 @@ carousel {
   color: #fff;
   text-align: center;
 }
+
+.FRM-UImock{  
+  display: flex;
+    margin: auto;
+    height: 520px;
+    width: 250px;
+    box-shadow: 0px -1px 2px rgb(255 255 255 / 10%);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.FRM-UImock .anim-wrap{
+
+}
