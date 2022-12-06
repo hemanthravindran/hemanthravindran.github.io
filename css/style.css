@@ -194,23 +194,7 @@ a.sub-section, .sub-section{
 }
 
 
-.text-header{
-  font-size:3rem;
-  font-family: "GT Walsheim Pro",Serif;
-  margin-bottom:1rem;
-  font-weight: lighter;
-  line-height: 1.3;
-  text-align: center;
-}
-.text-subheader{
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.7;
-  color: #999;
-  text-align: center;
-}
+
 
 .text-item-type{
   font-size: .8rem;

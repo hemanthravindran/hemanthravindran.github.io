@@ -227,3 +227,50 @@ carousel {
 .FRM-UImock .anim-wrap{
 
 }
+
+
+.story-details{  
+  margin-bottom:5rem;
+}
+.story-details>div{
+  width: auto;
+  display: block;  
+  padding: 0 8px;
+  border-radius: 8px;
+}
+.story-details>div>p{ 
+  margin: 0;
+  float: left;
+  width: auto;
+  padding: 4px;
+  font-size: 1rem; 
+  text-transform: uppercase; 
+}
+.story-details .story-type{margin-right:12px}
+
+.story-details.light>div{
+  background: rgba(255,255,255,.15);
+}
+.story-details.light>div>p{color:white}
+
+.story-details.dark>div{
+  background: rgba(0,0,0,.10);
+}
+.story-details.dark>div>p{color:rgba(0,0,0,.6)}
+
+.story-details.light .story-year{
+  background-image: url(../img/calendar-white.svg);
+  background-position: 8px 7px;  
+  background-size: 17px;
+  padding-left: 28px;
+  background-repeat: no-repeat;
+}
+.story-details.dark .story-year{
+  background-image: url(../img/calendar-black.svg);
+  background-position: 8px 7px;  
+  background-size: 17px;
+  padding-left: 28px;
+  background-repeat: no-repeat;
+}
+
+
