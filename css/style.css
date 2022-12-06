@@ -278,18 +278,49 @@ background:rgba(255,255,255,.3)!important;
   margin-top: 9rem;
 }
 
+#filters{float:left}
 .filters a {
+  color: #000;
+  display: inline-block;
+  padding: 4px 16px;
+  position: relative;
+  transition: .3s ease;
+  border-radius: 16px;
+}
+.filters a:hover,
+.filters a:focus,
+.filters a:active {
+  text-decoration: none;
+  color: black;
+  background: rgba(0,0,0,.2);
+  
+}
+.filters a.active {
+  color: white;
+  background: black;
+}
+
+#sorting{float:right}
+#sorting a:hover,
+#sorting a:focus,
+#sorting a:active {
+  text-decoration: none;
+  color: black;
+  background: rgba(0,0,0,.2);
+  border-radius: 4px;
+}
+#sorting a{
   color: #000;
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
+  transition: .3s ease;
 }
-
-.filters a:hover,
-.filters a:focus,
-.filters a:active {
-  text-decoration: none;
+#sorting a.active{
+  color: white;
+  background: black;
+  border-radius: 4px;
 }
 
 .tool-list-item div.row{padding: 2rem; border: 1px solid rgba(255,255,255,0);transition: .2s ease;}
@@ -309,7 +340,7 @@ background:rgba(255,255,255,.3)!important;
 
 
 
-.filters a:hover:before {
+/* .filters a:hover:before {
   content: "";
   position: absolute;
   left: 10px;
@@ -317,13 +348,10 @@ background:rgba(255,255,255,.3)!important;
   bottom: 0;
   height: 1px;
   background-color: #000; 
-}
+} */
 
-.filters a.active {
-  color: #000;
-}
 
-.filters a.active:before {
+/* .filters a.active:before {
   content: "";
   position: absolute;
   left: 10px;
@@ -331,7 +359,7 @@ background:rgba(255,255,255,.3)!important;
   bottom: 0;
   height: 1px;
   background-color: #000;
-}
+} */
 
 .item {
   border: none;

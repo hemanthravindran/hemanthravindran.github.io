@@ -10,12 +10,9 @@
 
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap"
     rel="stylesheet">
-
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
   <link href="vendor/aos/aos.css" rel="stylesheet">
@@ -77,20 +74,33 @@
     <div class="site-section site-portfolio">
       <div class="container">
         
-        <div class="row align-items-top">
-          <div class="col-sm-12 col-md-12 col-lg-6 mb3 mb-12 mb-lg-6" data-aos="fade-up">
-            <h2 style="text-align: left;font-weight: 500;font-size: 1.8rem;font-family:'Zilla Slab',serif;">Portfolio of Hemanth Ravindran</h2>
-            <p class="mb-0" style="color:#999">Product & Visual Designer, Illustrator, Motion Artist</p>
+        <div class="row align-items-center mb10">
+          <div class="col-sm-12 col-md-12 col-lg-12 mb3 mb-12 mb-lg-6" data-aos="fade-up">
+            <h2 class="center-block align-center w100" style="font-size: 5rem;font-weight: 600;line-height:6.2rem">Portfolio of <br>Hemanth Ravindran</h2>
+            <p class="center-block align-center w100" style="color:#999;font-size:2rem">Product & Visual Designer, Illustrator, Motion Artist</p>
+          </div>
           </div>
 
-          <div  class="col-sm-12 col-md-12 col-lg-6 mb0 text-left text-lg-right" data-aos="fade-up" data-aos-delay="100">
+        
+         <div class="row align-items-center" data-aos="fade-up"> 
+
+          <!-- Filters -->
+          <div  class="col-sm-12 col-md-6 col-lg-6 mb0 text-left text-lg-right">
             <div id="filters" class="filters">
-              <a href="#" data-filter="*" class="active">Top Works First</a>
-              <a href="#" data-filter=".web">Most Recent First</a>
-              <!-- <a href="#" data-filter=".design">Design</a>
-              <a href="#" data-filter=".branding">Branding</a>
-              <a href="#" data-filter=".photography">Photography</a> -->
+              <a href="#" data-filter="*" class="active">All</a>
+              <a href="#" data-filter=".f-uiux">UI UX</a>
+              <a href="#" data-filter=".f-illus">Illustrations</a>
+              <a href="#" data-filter=".f-visual">Visual design</a>
+              <a href="#" data-filter=".f-motion">Motion & Interaction</a>
             </div>
+          </div>
+
+          <!-- Sort -->
+          <div  class="col-sm-12 col-md-6 col-lg-6 mb0 text-left text-lg-right">
+          <div id="sorting">
+            <a href="#" data-filter="*" class="active">Latest First</a>
+            <a href="#" data-filter=".web">Top works first</a>            
+          </div>
           </div>
         </div>
 
@@ -101,7 +111,7 @@
 
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
           
-          <div class="item web col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-motion col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-zerokf.html" class="item-wrap fancybox">
               <img class="img-fluid" src="img/covers/zerokf_cover.gif">
               <p class="item-title">Zero Keyframe Animation</p>
@@ -109,7 +119,7 @@
             </a>
           </div>
 
-          <div class="item branding col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-visual branding col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-matchmove.html" class="item-wrap fancybox">
               <img class="img-fluid" src="img/covers/matchmove_cover2.gif">
               <p class="item-title">Matchmove Pay</p>
@@ -118,7 +128,7 @@
           </div>
 
 
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-visual col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-albumart.html" class="item-wrap fancybox">
               <img class="img-fluid" src="img/covers/albumart_cover.png">
               <p class="item-title">OLA Play&nbsp&nbsp•&nbsp&nbspDesign System for Album Artworks</p>
@@ -126,7 +136,7 @@
             </a>
           </div>
 
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-uiux col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-cxc.html" class="item-wrap fancybox">
               <img class="img-fluid" src="img/covers/cxc3.png">
               <p class="item-title">OLA Play&nbsp&nbsp•&nbsp&nbspCXC V3</p>
@@ -134,7 +144,7 @@
             </a>
           </div>
 
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-illus col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-deers.html" class="item-wrap fancybox">
               <img class="img-fluid" src="img/covers/deers.png">
               <p class="item-title">Deers</p>
@@ -142,7 +152,7 @@
             </a>
           </div>
 
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-visual col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-e2o.html" class="item-wrap fancybox">
                   <video class="vdo-fluid" width="100%" autoplay muted loop>
                   <source src="img/covers/e2o.mp4" type="video/mp4"> 
@@ -152,7 +162,7 @@
             </a>
           </div>
 
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-visual col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-oebranding.html" class="item-wrap fancybox">
               <img class="img-fluid" src="img/covers/olaelectric.png">
               <p class="item-title">OLA Electric&nbsp&nbsp•&nbsp&nbspBranding</p>
@@ -160,42 +170,42 @@
             </a>
           </div>
 
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-visual col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="" class="item-wrap fancybox">
               <img class="img-fluid" src="img/covers/tararngstations.png">
               <p class="item-title">OLA Electric&nbsp&nbsp•&nbsp&nbspTarang Charging Stations</p>
               <p class="item-type"> Space Branding&nbsp&nbsp•&nbsp&nbspPrint</p>
             </a>
           </div>
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-visual col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="" class="item-wrap fancybox">
               <img class="img-fluid" src="img/covers/missionelectric.png">
               <p class="item-title">OLA&nbsp&nbsp•&nbsp&nbspMission Electric</p>
               <p class="item-type"> Branding&nbsp&nbsp•&nbsp&nbspVisual Language</p>
             </a>
           </div>
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-illus col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-illustrations.html" class="item-wrap fancybox">
               <img class="img-fluid" src="img/covers/personalart.png">
               <p class="item-title">My Artworks</p>
               <p class="item-type"> Fine Art&nbsp&nbsp•&nbsp&nbspDigital llustrations&nbsp&nbsp•&nbsp&nbspPosters</p>
             </a>
           </div>
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-illus col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-languages.html" class="item-wrap fancybox">
               <img class="img-fluid" src="img/covers/languageicons.png">
               <p class="item-title">Indian Language Icons</p>
               <p class="item-type"> Illustrations</p>
             </a>
           </div>
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-visual col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="" class="item-wrap fancybox">
               <img class="img-fluid" src="img/covers/misochain.png">
               <p class="item-title">MisoChain</p>
               <p class="item-type"> Branding</p>
             </a>
           </div>
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-uiux f-motion col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-frtools.html" class="item-wrap fancybox">
                   <video class="img-fluid" width="100%" autoplay muted loop>
                   <source src="img/covers/frtools.mp4" type="video/mp4"> 
@@ -205,14 +215,14 @@
             </a>
           </div>
           
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-visual col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-frcoursecards.html" class="item-wrap fancybox">
               <img class="img-fluid" src="img/covers/frcoursecards.png">
               <p class="item-title">FrontRow&nbsp&nbsp•&nbsp&nbspCoursecards</p>
               <p class="item-type"> Image compositing</p>
             </a>
           </div>
-          <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+          <div class="item f-uiux col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-frfeatures.html" class="item-wrap fancybox">
               <video class="img-fluid" width="100%" autoplay muted loop>
                   <source src="img/covers/frfeatures.mp4" type="video/mp4"> 
@@ -221,7 +231,7 @@
               <p class="item-type"> UI UX</p>
             </a>
           </div>
-           <div class="item photography col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
+           <div class="item f-motion col-sm-6 col-md-6 col-lg-6 mb-6" data-aos="fade-up" >
             <a href="work-frmotion.html" class="item-wrap fancybox">
               <video class="img-fluid" width="100%" autoplay muted loop>
                   <source src="img/covers/frmotion.mp4" type="video/mp4"> 
