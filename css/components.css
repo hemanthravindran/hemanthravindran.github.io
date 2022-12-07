@@ -272,5 +272,17 @@ carousel {
   padding-left: 28px;
   background-repeat: no-repeat;
 }
+#sortnfilter-wrap{
+  background: white;
+  position: fixed;
+  top: -72px;
+  padding: 16px 0;
+  z-index: 100;
+  transition: top .4s ease;
+  border-bottom:1px solid #f1f1f1
+}
+.sticky-shadow {
+  /* box-shadow: 0px 20px 70px rgb(0 0 0 / 10%); */
+} 
 
 

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -17,8 +16,8 @@
     <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/atom.css" rel="stylesheet">
+    <link href="css/components.css" rel="stylesheet">
   </head>
-  
   <body>
     <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
       <div class="container py-2 py-md-5">
@@ -63,7 +62,6 @@
         </div>
       </div>
     </div>
-
     <nav class="navbar navbar-light custom-navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">Stipple</a>
@@ -72,90 +70,94 @@
         </a>
       </div>
     </nav>
-
+    <!-- FILTERS & SORT -->
+    <div class="container-fluid" id="sortnfilter-wrap">
+      <div class="container">
+        <div class="row align-items-center ph1">
+          <!-- Filters -->
+          <div class="col-sm-12 col-md-8 col-lg-8 mb0 text-left text-lg-right">
+            <div id="filters" class="filters">
+              <a data-filter="*" class="active">All works</a>
+              <a data-filter=".f-uiux">UI UX</a>
+              <a data-filter=".f-illus">Illustrations</a>
+              <a data-filter=".f-visual">Visual & Branding</a>
+              <a data-filter=".f-motion">Motion & Interaction</a>
+            </div>
+          </div>
+          <!-- Sort -->
+          <div class="col-sm-12 col-md-4 col-lg-4 mb0 text-left text-lg-right">
+            <div class="sorting" id="sorting">
+              <a data-sort-value="sbest"  class="active">Best works first</a>
+              <a data-sort-value="sdate">Latest First</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <main id="main">
-      <div class="site-section site-portfolio">
+      <div class="site-section site-portfolio pb-0">
         <div class="container">
-          
           <div class="row align-items-center mb10">
             <div class="col-sm-12 col-md-12 col-lg-12 mb3 mb-12 mb-lg-6" data-aos="fade-up">
               <h2 class="center-block align-center w100" style="font-size: 5rem;font-weight: 600;line-height:6.2rem">Portfolio of <br>Hemanth Ravindran </h2>
               <p class="center-block align-center w100" style="color:#999;font-size:2rem">Product & Visual Designer, Illustrator, Motion Artist</p>
             </div>
           </div>
-
-          <!-- FILTERS & SORT -->
-          <div class="row align-items-center ph1" data-aos="fade-up">
-            <!-- Filters -->
-            <div class="col-sm-12 col-md-8 col-lg-8 mb0 text-left text-lg-right">
-              <div id="filters" class="filters">
-                <a href="#" data-filter="*" class="active">All</a>
-                <a href="#" data-filter=".f-uiux">UI UX</a>
-                <a href="#" data-filter=".f-illus">Illustrations</a>
-                <a href="#" data-filter=".f-visual">Visual & Branding</a>
-                <a href="#" data-filter=".f-motion">Motion & Interaction</a>
-              </div>
-            </div>
-            <!-- Sort -->
-            <div class="col-sm-12 col-md-4 col-lg-4 mb0 text-left text-lg-right">
-              <div id="sorting">
-                <a href="#" data-filter="*" class="active">Latest First</a>
-                <a href="#" data-filter=".web">Top works first</a>
-              </div>
-            </div>
-          </div>
-
-
+        </div>
+      </div>
+      <div class="site-section site-portfolio pt-0">
+        <div class="container">
           <!-- PORTFOLIO GRID -->
-          <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" >
-
-            <div class="item f-motion s-r1 s-col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">15</div><div class="sort-type s-best">4</div>
+          <div id="portfolio-grid" class="row no-gutter grid portfolio-grid" data-aos="fade-up">
+            <div class="item grid-item f-motion s-r1 s-col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">15</div>
+              <div class="sort-type sbest">4</div>
               <a href="work-zerokf.html" class="item-wrap fancybox">
                 <img class="img-fluid" src="img/covers/zerokf_cover.gif">
                 <p class="item-title">Zero Keyframe Animation</p>
                 <p class="item-type"> motion design&nbsp&nbsp•&nbsp&nbspscripting</p>
               </a>
             </div>
-
-            <div class="item f-visual s-r2 branding col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">5</div><div class="sort-type s-best">8</div>
+            <div class="item  grid-item f-visual f-illus s-r2 branding col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">5</div>
+              <div class="sort-type sbest">8</div>
               <a href="work-matchmove.html" class="item-wrap fancybox">
                 <img class="img-fluid" src="img/covers/matchmove_cover2.gif">
                 <p class="item-title">Matchmove Pay</p>
                 <p class="item-type"> Visual language&nbsp&nbsp•&nbsp&nbspMotion</p>
               </a>
             </div>
-
-            <div class="item f-visual s-r3 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">12</div><div class="sort-type s-best">3</div>
+            <div class="item  grid-item f-visual s-r3 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">12</div>
+              <div class="sort-type sbest">3</div>
               <a href="work-albumart.html" class="item-wrap fancybox">
                 <img class="img-fluid" src="img/covers/albumart_cover.png">
                 <p class="item-title">OLA Play&nbsp&nbsp•&nbsp&nbspDesign System for Album Artworks</p>
                 <p class="item-type"> Visual design&nbsp&nbsp•&nbsp&nbspAlgorithm</p>
               </a>
             </div>
-
-            <div class="item f-uiux s-r4 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">13</div><div class="sort-type s-best">1</div>
+            <div class="item  grid-item f-uiux s-r4 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">13</div>
+              <div class="sort-type sbest">1</div>
               <a href="work-cxc.html" class="item-wrap fancybox">
                 <img class="img-fluid" src="img/covers/cxc3.png">
                 <p class="item-title">OLA Play&nbsp&nbsp•&nbsp&nbspCXC V3</p>
                 <p class="item-type"> UI&nbsp&nbsp•&nbsp&nbspInteraction </p>
               </a>
             </div>
-
-            <div class="item f-illus s-r5 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">14</div><div class="sort-type s-best">5</div>
+            <div class="item  grid-item f-illus s-r5 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">14</div>
+              <div class="sort-type sbest">5</div>
               <a href="work-deers.html" class="item-wrap fancybox">
                 <img class="img-fluid" src="img/covers/deers.png">
                 <p class="item-title">Deers</p>
                 <p class="item-type"> Illustration Series</p>
               </a>
             </div>
-
-            <div class="item f-visual s-r6 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">7</div><div class="sort-type s-best">9</div>
+            <div class="item  grid-item f-visual s-r6 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">7</div>
+              <div class="sort-type sbest">9</div>
               <a href="work-e2o.html" class="item-wrap fancybox">
                 <video class="vdo-fluid" width="100%" autoplay muted loop>
                   <source src="img/covers/e2o.mp4" type="video/mp4">
@@ -164,63 +166,63 @@
                 <p class="item-type"> Product Video&nbsp&nbsp•&nbsp&nbsp3D&nbsp&nbsp•&nbsp&nbspMotion</p>
               </a>
             </div>
-
-            <div class="item f-visual s-r7 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">8</div><div class="sort-type s-best">10</div>
+            <div class="item  grid-item f-visual s-r7 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">8</div>
+              <div class="sort-type sbest">10</div>
               <a href="work-oebranding.html" class="item-wrap fancybox">
                 <img class="img-fluid" src="img/covers/olaelectric.png">
                 <p class="item-title">OLA Electric&nbsp&nbsp•&nbsp&nbspBranding</p>
                 <p class="item-type"> Branding&nbsp&nbsp•&nbsp&nbspGuidelines</p>
               </a>
             </div>
-
-            <div class="item f-visual s-r8 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">6</div><div class="sort-type s-best">13</div>
+            <div class="item  grid-item f-visual s-r8 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">6</div>
+              <div class="sort-type sbest">13</div>
               <a href="" class="item-wrap fancybox">
                 <img class="img-fluid" src="img/covers/tararngstations.png">
                 <p class="item-title">OLA Electric&nbsp&nbsp•&nbsp&nbspTarang Charging Stations</p>
                 <p class="item-type"> Space Branding&nbsp&nbsp•&nbsp&nbspPrint</p>
               </a>
             </div>
-
-            <div class="item f-visual s-r9 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">9</div><div class="sort-type s-best">13</div>
+            <div class="item  grid-item f-visual s-r9 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">9</div>
+              <div class="sort-type sbest">13</div>
               <a href="" class="item-wrap fancybox">
                 <img class="img-fluid" src="img/covers/missionelectric.png">
                 <p class="item-title">OLA&nbsp&nbsp•&nbsp&nbspMission Electric</p>
                 <p class="item-type"> Branding&nbsp&nbsp•&nbsp&nbspVisual Language</p>
               </a>
             </div>
-
-            <div class="item f-illus s-r10 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">16</div><div class="sort-type s-best">15</div>
+            <div class="item  grid-item f-illus s-r10 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">16</div>
+              <div class="sort-type sbest">15</div>
               <a href="work-illustrations.html" class="item-wrap fancybox">
                 <img class="img-fluid" src="img/covers/personalart.png">
                 <p class="item-title">My Artworks</p>
                 <p class="item-type"> Fine Art&nbsp&nbsp•&nbsp&nbspDigital llustrations&nbsp&nbsp•&nbsp&nbspPosters</p>
               </a>
             </div>
-
-            <div class="item f-illus s-r11 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">11</div><div class="sort-type s-best">16</div>
+            <div class="item  grid-item f-illus s-r11 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">11</div>
+              <div class="sort-type sbest">16</div>
               <a href="work-languages.html" class="item-wrap fancybox">
                 <img class="img-fluid" src="img/covers/languageicons.png">
                 <p class="item-title">Indian Language Icons</p>
                 <p class="item-type"> Illustrations</p>
               </a>
             </div>
-
-            <div class="item f-visual s-r12 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">10</div><div class="sort-type s-best">14</div>
+            <div class="item  grid-item f-visual s-r12 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">10</div>
+              <div class="sort-type sbest">14</div>
               <a href="" class="item-wrap fancybox">
                 <img class="img-fluid" src="img/covers/misochain.png">
                 <p class="item-title">MisoChain</p>
                 <p class="item-type"> Branding</p>
               </a>
             </div>
-
-            <div class="item f-uiux s-r13 f-motion col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">2</div><div class="sort-type s-best">6</div>
+            <div class="item  grid-item f-uiux s-r13 f-motion col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">2</div>
+              <div class="sort-type sbest">6</div>
               <a href="work-frtools.html" class="item-wrap fancybox">
                 <video class="img-fluid" width="100%" autoplay muted loop>
                   <source src="img/covers/frtools.mp4" type="video/mp4">
@@ -229,18 +231,18 @@
                 <p class="item-type"> UI&nbsp&nbsp•&nbsp&nbspUX&nbsp&nbsp•&nbsp&nbspInteractions</p>
               </a>
             </div>
-
-            <div class="item f-visual s-r14 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">3</div><div class="sort-type s-best">11</div>
+            <div class="item  grid-item f-visual s-r14 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">3</div>
+              <div class="sort-type sbest">11</div>
               <a href="work-frcoursecards.html" class="item-wrap fancybox">
                 <img class="img-fluid" src="img/covers/frcoursecards.png">
                 <p class="item-title">FrontRow&nbsp&nbsp•&nbsp&nbspCoursecards</p>
                 <p class="item-type"> Image compositing</p>
               </a>
             </div>
-
-            <div class="item f-uiux s-r15 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">1</div><div class="sort-type s-best">2</div>
+            <div class="item  grid-item f-uiux s-r15 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate">1</div>
+              <div class="sort-type sbest">2</div>
               <a href="work-frfeatures.html" class="item-wrap fancybox">
                 <video class="img-fluid" width="100%" autoplay muted loop>
                   <source src="img/covers/frfeatures.mp4" type="video/mp4">
@@ -249,9 +251,9 @@
                 <p class="item-type"> UI UX</p>
               </a>
             </div>
-
-            <div class="item f-motion s-r16 col-sm-6 col-md-6 col-lg-6 mb-6" >
-              <div class="sort-type s-date">4</div><div class="sort-type s-best">7</div>
+            <div class="item  grid-item f-motion s-r16 col-sm-6 col-md-6 col-lg-6 mb-6">
+              <div class="sort-type sdate" data-name="sdate">4</div>
+              <div class="sort-type sbest" data-name="sbest">7</div>
               <a href="work-frmotion.html" class="item-wrap fancybox">
                 <video class="img-fluid" width="100%" autoplay muted loop>
                   <source src="img/covers/frmotion.mp4" type="video/mp4">
@@ -260,13 +262,10 @@
                 <p class="item-type"> Animations&nbsp&nbsp•&nbsp&nbspInteractions</p>
               </a>
             </div>
-
           </div>
-
         </div>
       </div>
     </main>
-
     <footer class="footer" role="contentinfo">
       <div class="container">
         <div class="row">
@@ -274,12 +273,11 @@
         </div>
       </div>
     </footer>
-
     <style>
-      .sort-type{display: none;}
+      .sort-type {
+        display: none;
+      }
     </style>
-
-    
     <!-- Vendor JS Files -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/jquery/jquery-migrate.min.js"></script>
@@ -289,7 +287,50 @@
     <script src="vendor/isotope/isotope.pkgd.min.js"></script>
     <script src="vendor/aos/aos.js"></script>
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-    <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+    
+    <script>
+      var $grid = $('.portfolio-grid').isotope({
+        itemSelector: '.item',
+        layoutMode: 'masonry',
+        getSortData: {
+          sdate: '.sdate parseInt',
+          sbest: '.sbest parseInt',
+        }
+      });
+      // bind sort button click
+      $('.sorting').on('click', 'a', function() {
+        var sortValue = $(this).attr('data-sort-value');
+        console.log('sortValue', sortValue)
+        $grid.isotope({
+          sortBy: sortValue
+        });
+      });
+      // change is-checked class on buttons
+      $('.sorting').each(function(i, sorting) {
+        var $sorting = $(sorting);
+        $sorting.on('click', 'a', function() {
+          $sorting.find('.active').removeClass('active');
+          $(this).addClass('active');
+        });
+      });
+
+      window.onscroll = function() {
+        scroll();
+      };
+
+      function scroll() {
+        var stickywrap=document.getElementById("sortnfilter-wrap");
+
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+          document.getElementById("sortnfilter-wrap").style.top = "0";
+          stickywrap.classList.add("sticky-shadow");  
+          
+        } else {
+          document.getElementById("sortnfilter-wrap").style.top = "-72px";
+          stickywrap.classList.remove("sticky-shadow");                  
+        }
+      };
+    </script>
   </body>
 </html>
