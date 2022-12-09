@@ -169,6 +169,7 @@ ol {    padding-inline-start: 20px;}
 .blackbg{background:black!important;}
 .o15{opacity:.15;}
 .o30{opacity:.3;}
+.o40{opacity:.4;}
 .o50{opacity:.5;}
 .o70{opacity:.7;}
 
@@ -226,7 +227,9 @@ ol {    padding-inline-start: 20px;}
 .img-fluid {
     max-width: 100%;
     display: block;
-    height: auto
+    height: auto;
     }
 
-
+.ds-img-lg{
+  box-shadow:0 0 20px rgba(0,0,0,.3);
+}
