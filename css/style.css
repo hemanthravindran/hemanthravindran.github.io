@@ -1177,6 +1177,8 @@ video {
   color: #000;
 }
 
+.d-hide{display:none !important;}
+
 @media (max-width: 780px) {
   .custom-navbar>.container {
     padding-right: 0;
