@@ -532,7 +532,7 @@ h3.section-title {
 }
 
 .filters>a {
-  color: #000;
+  color: #8f8f8f;
   display: inline-block;
   padding: 4px 16px;
   position: relative;
@@ -540,21 +540,22 @@ h3.section-title {
   border-radius: 16px;
   font-size: 13px;
   cursor: pointer;
-
 }
 
 .filters>a:hover,
 .filters>a:focus,
 .filters>a:active {
   text-decoration: none;
-  color: black;
-  background: rgba(0, 0, 0, .2);
+  color: white;
+  background: #ffffff30;
 
 }
 
 .filters>a.active {
-  color: white;
-  background: black;
+  color: #000000;
+  background: #ffffff;
+  /* border: 1px solid white; */
+  font-weight: 500;
 }
 
 #sorting {
@@ -565,12 +566,13 @@ h3.section-title {
 #sorting a:focus,
 #sorting a:active {
   text-decoration: none;
-  color: black;
-  background: rgba(0, 0, 0, .2);
+  color: white;
+  background: #ffffff30;
+
 }
 
 #sorting a {
-  color: #000;
+  color: #8f8f8f;
   display: inline-block;
   padding: 4px 16px;
   position: relative;
@@ -582,8 +584,8 @@ h3.section-title {
 }
 
 #sorting a.active {
-  color: white;
-  background: black;
+  color: black;
+  background: white;
 }
 
 .tool-list-item div.row {
