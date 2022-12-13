@@ -11,27 +11,27 @@
 
 
 @font-face {
-  font-family: 'WalsheimPro';
+  font-family: 'GT Walsheim Pro';
   src: url(../fonts/GTWalsheimPro-Light.ttf) format('truetype');
   font-weight:100;
 }
 @font-face {
-  font-family: 'WalsheimPro';
+  font-family: 'GT Walsheim Pro';
   src: url(../fonts/GTWalsheimPro-Regular.ttf) format('truetype');
   font-weight:200;
 }
 @font-face {
-  font-family: 'WalsheimPro';
+  font-family: 'GT Walsheim Pro';
   src: url(../fonts/GTWalsheimPro-Medium.ttf) format('truetype');
   font-weight:300;
 }
 @font-face {
-  font-family: 'WalsheimPro';
+  font-family: 'GT Walsheim Pro';
   src: url(../fonts/GTWalsheimPro-Bold.ttf) format('truetype');
   font-weight:600;
 }
 @font-face {
-  font-family: 'WalsheimPro';
+  font-family: 'GT Walsheim Pro';
   src: url(../fonts/GTWalsheimPro-Black.ttf) format('truetype');
   font-weight:700;
 }
@@ -478,7 +478,7 @@ a.sub-section,
 }
 
 h2.section-title {
-  font-family: "GT Walsheim Pro", Serif;
+  font-family: "GT Walsheim Pro", sans-serif;
   font-size: 2rem;
   margin: 0 0 5rem 0;
   font-weight: 500;
@@ -486,7 +486,7 @@ h2.section-title {
 
 
 h1.section-title {
-  font-family: "GT Walsheim Pro", Serif;
+  font-family: "GT Walsheim Pro", sans-serif;
   font-size: 2rem;
   margin: 0 0 7rem 0;
   font-weight: 500;
@@ -495,7 +495,7 @@ h1.section-title {
 
 
 h3.section-title {
-  font-family: "GT Walsheim Pro", Serif;
+  font-family: "GT Walsheim Pro", sans-serif;
   font-size: 1.2rem;
   margin: 0 0 5rem 0;
 }
