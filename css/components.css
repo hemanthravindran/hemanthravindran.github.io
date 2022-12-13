@@ -323,7 +323,7 @@ carousel {
   padding: 16px 0;
   z-index: 100;
   transition: top .4s ease;
-  
+
 }
 
 #sortnfilter-wrap img {
@@ -344,14 +344,15 @@ carousel {
   border: 1px solid rgba(0, 0, 0, .3);
   cursor: pointer;
   border-radius: 50px;
+  background: black;
   background-position-y: 1px;
-  background-position-x: 120px;
+  background-position-x: 180px;
+  color: white;
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 4px 16px 4px 16px;
   transition: all.2s ease;
-  background-image: url(../img/handwave.gif);
-  ;
+  background-image: url(../img/handwave-white.gif);
 }
 
 #btnabout img {}
@@ -360,12 +361,12 @@ carousel {
   border: 1px solid rgba(0, 0, 0, 1);
   padding: 4px 50px 4px 16px;
   background-position-y: 1px;
-  background-position-x: 100px;
+  background-position-x: 164px;
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 4px 40px 4px 16px;
   transition: all.2s ease;
-  background-image: url(../img/handwave.gif);
+  background-image: url(../img/handwave-white.gif);
 }
 
 #btnabout:hover img {}
@@ -378,26 +379,35 @@ carousel {
   background-repeat-y: no-repeat;
   background-image: url(../img/stippledots.svg);
 }
-.skillitem-bad{margin: auto;
+
+.skillitem-bad {
+  margin: auto;
   width: fit-content;
   padding: 4px 18px;
   background: #ffb1b1;
   margin-bottom: 16px;
-  border-radius: 20px;}
-.skillitem-good{margin: auto;
+  border-radius: 20px;
+}
+
+.skillitem-good {
+  margin: auto;
   width: fit-content;
   padding: 4px 18px;
   background: #c2def2;
   margin-bottom: 16px;
-  border-radius: 20px;}
-.skillitem-grt{margin: auto;
+  border-radius: 20px;
+}
+
+.skillitem-grt {
+  margin: auto;
   width: fit-content;
   padding: 4px 18px;
   background: #4de08c;
   margin-bottom: 16px;
-  border-radius: 20px;}
+  border-radius: 20px;
+}
 
-.contact-items a{
+.contact-items a {
   color: white;
   background: black;
   font-size: 1.3rem;
@@ -405,26 +415,137 @@ carousel {
   border: 1px solid #00000050;
   border-radius: 12px;
   margin-bottom: 1.5rem;
-  box-shadow:0px 0px 10px #00000000;
+  box-shadow: 0px 0px 10px #00000000;
   transition: all .2s ease;
 }
-.contact-items a:hover{box-shadow:0px 10px 10px #00000070;}
 
-#mailmebtn{background-image: url(../img/btn-icn-gm.png);
+.contact-items a:hover {
+  box-shadow: 0px 10px 10px #00000070;
+}
+
+#mailmebtn {
+  background-image: url(../img/btn-icn-gm.png);
   background-repeat: no-repeat;
   background-position: right;
   background-origin: content-box;
   background-size: 40px;
 }
-#linkedinbtn{background-image: url(../img/btn-icn-li.png);
+
+#linkedinbtn {
+  background-image: url(../img/btn-icn-li.png);
   background-repeat: no-repeat;
   background-position: right;
   background-origin: content-box;
   background-size: 40px;
 }
-#whatsappbtn{background-image: url(../img/btn-icn-wa.png);
+
+#whatsappbtn {
+  background-image: url(../img/btn-icn-wa.png);
   background-repeat: no-repeat;
   background-position: right;
   background-origin: content-box;
   background-size: 40px;
+}
+
+.morework-item {}
+
+.morework-item :hover .mw-img-wrap {
+  transform: scale(.95)
+}
+
+.morework-item a {}
+
+.morework-item a p {
+  margin-bottom:0;
+}
+
+.morework-item a p1 {
+  color: gray;
+  width: 100%;
+  text-align: center;
+  FONT-SIZE: .9rem;
+  
+}
+
+
+.morework-item .mw-img-wrap {
+  height: 230px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: .2s ease;
+  overflow: hidden;
+}
+
+.morework-item .mw-img-wrap video {
+  margin: auto;
+}
+
+#mwitem1 {
+  background-image: url("../img/covers/albumart_cover.png");
+}
+
+#mwitem2 {
+  background-image: url("../img/covers/cleartaxilsn2.png");
+}
+
+#mwitem3 {
+  background-image: url("../img/covers/cleartaxwebcover.png");
+}
+
+#mwitem4 {
+  background-image: url("../img/covers/cxc3.png");
+}
+
+#mwitem5 {
+  background-image: url("../img/covers/deers.png");
+}
+
+#mwitem6 {
+  background-image: url("../img/covers/frcoursecards.png");
+}
+
+#mwitem7 {
+  background-image: url("../img/covers/languageicons.png");
+}
+
+#mwitem8 {
+  background-image: url("../img/covers/misochain.png");
+}
+
+#mwitem9 {
+  background-image: url("../img/covers/missionelectric.png");
+}
+
+#mwitem10 {
+  background-image: url("../img/covers/olaelectric.png");
+}
+
+#mwitem11 {
+  background-image: url("../img/covers/personalart.png");
+}
+
+#mwitem12 {
+  background-image: url("../img/covers/tararngstations.png");
+}
+.final-footer{
+  background: black;
+  display: flex;
+  width: 100%;
+ padding:1rem 0;
+}
+.final-footer a{
+  float: left;
+  color: #FFFFFF80;
+  border: 1px solid #ffffff50;
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin: 2.5rem 0.5rem;
+  font-size: .9REM;
+  transition: all .2s ease;
+ 
+}
+.final-footer a:hover{
+  color:#ffffff;
+  border:1px solid #ffffff;
 }
