@@ -108,9 +108,11 @@ p {
   /* float: left; */
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: left;
+  letter-spacing: .04rem;
 }
+
 
 p1 {
   font-size: .95rem;
@@ -118,6 +120,7 @@ p1 {
   line-height: 1.5;
   text-align: left;
   display: block;
+  letter-spacing: .04rem;
 }
 
 .o10 {
