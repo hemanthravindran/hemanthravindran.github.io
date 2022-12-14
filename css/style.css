@@ -122,7 +122,7 @@ p1 {
   display: block;
   letter-spacing: .04rem;
 }
-
+.o0{opacity:0;}
 .o10 {
   opacity: .1;
 }
@@ -188,7 +188,7 @@ p1 {
 }
 
 .clipcontent {
-  overflow:
+  overflow:hidden
 }
 
 .pb0 {
@@ -406,7 +406,7 @@ p1 {
 }
 
 .white-bg {
-  background
+  background:white;
 }
 
 .tgray {
@@ -557,7 +557,10 @@ h3.section-title {
   font-size: 1.2rem !Important
 }
 
-.header-tab {}
+.header-tab {
+  margin: auto;
+  padding-right: 68px;
+}
 
 .header-tab a {
   display: inline-block;
@@ -743,8 +746,7 @@ h3.section-title {
 }
 
 .item .item-wrap p.item-client {
-  margin-top;
-  5px
+  margin-top:  5px;
 }
 
 .item .item-wrap p.item-type {
@@ -1182,24 +1184,26 @@ video {
 }
 
 .custom-navbar div.back-wrap {
-  justify-content: start !important;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
 }
 .custom-navbar.lv1 a.burger{display: none;}
-.custom-navbar div.back-wrap a{
+.custom-navbar div.back-wrap a.back-btn{
   padding: 4px;
   border-radius: 50%;
   transition: all .2s ease;
 }
-.custom-navbar.dark div.back-wrap a{
+.custom-navbar.dark div.back-wrap a.back-btn{
   border:2px solid rgba(0,0,0,.2);  
 }
-.custom-navbar.dark div.back-wrap a:hover{
+.custom-navbar.dark div.back-wrap a.back-btn:hover{
   border:2px solid rgba(0,0,0,.8);  
 }
-.custom-navbar.light div.back-wrap a{
+.custom-navbar.light div.back-wrap a.back-btn{
   border:2px solid rgba(255,255,255,.2);
 }
-.custom-navbar.light div.back-wrap a:hover{
+.custom-navbar.light div.back-wrap a.back-btn:hover:hover{
   border:2px solid rgba(255,255,255,.7);
 }
 .custom-navbar a img {
