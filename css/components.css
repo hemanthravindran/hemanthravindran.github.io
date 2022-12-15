@@ -345,12 +345,12 @@ carousel {
   cursor: pointer;
   border-radius: 50px;
   background: black;
-  background-position-y: 1px;
+  background-position-y: 6px;
   background-position-x: 180px;
   color: white;
   background-size: 32px;
   background-repeat: no-repeat;
-  padding: 4px 16px 4px 16px;
+  padding: 8px 16px 8px 16px;
   transition: all.2s ease;
   background-image: url(../img/handwave-white.gif);
 }
@@ -360,11 +360,11 @@ carousel {
 #btnabout:hover {
   border: 1px solid rgba(0, 0, 0, 1);
   padding: 4px 50px 4px 16px;
-  background-position-y: 1px;
+  background-position-y: 6px;
   background-position-x: 164px;
   background-size: 32px;
   background-repeat: no-repeat;
-  padding: 4px 40px 4px 16px;
+  padding: 8px 40px 8px 16px;
   transition: all.2s ease;
   background-image: url(../img/handwave-white.gif);
 }
