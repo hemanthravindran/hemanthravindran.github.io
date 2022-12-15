@@ -37,6 +37,14 @@
 
 
 <body class="blackbg text-white">
+                <!-- mweb error overlay-->
+                <div id="mboverlay" class="">
+                  <p class="center-block align-center mb0"> Hey there👋 </p>
+                  <h1 class="center-block align-center mt2"><b>The site is not yet optimized for mobile devices</b></h1> 
+                  <img class="center-block w80" src="img/mweb-error.svg" alt="">
+                  <p class="align-center">Things might break sometimes. <br><b>Please do join through desktop web if possible.</b> Thanks! </p>
+                  <btn class="primary" id="warningbtnprim">Continue anyway</btn>    
+                </div>
 
   <nav class="navbar navbar-light custom-navbar lv1 light">
     <div class="container">
@@ -238,6 +246,12 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+  <script>
+    // close overlay on click btn
+    $('#mboverlay').on('click', '#warningbtnprim', function () {
+      document.getElementById("mboverlay").style.display = "none";
+      });
+  </script>
 
 </body>
 

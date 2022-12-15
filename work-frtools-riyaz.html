@@ -23,6 +23,14 @@
     <link href="css/components.css" rel="stylesheet">
   </head>
   <body class="blackbg">
+                  <!-- mweb error overlay-->
+  <div id="mboverlay" class="">
+    <p class="center-block align-center mb0"> Hey there👋 </p>
+    <h1 class="center-block align-center mt2"><b>The site is not yet optimized for mobile devices</b></h1> 
+    <img class="center-block w80" src="img/mweb-error.svg" alt="">
+    <p class="align-center">Things might break sometimes. <br><b>Please do join through desktop web if possible.</b> Thanks! </p>
+    <btn class="primary" id="warningbtnprim">Continue anyway</btn>    
+  </div>
     <nav class="navbar navbar-light custom-navbar lv1 light">
       <div class="container">
         <div class="back-wrap">
@@ -44,6 +52,7 @@
             <div class="row justify-content-center">
               <div class="col-sm-12 col-md-12 col-lg-10" data-aos="fade-up">
                 <h2 class="text-header twhite">Riyaz</h2>
+                
                 <div class="row justify-content-center story-details light">
                   <div class="story-type">
                     <p>UI</p>
@@ -55,6 +64,7 @@
                   <div class="story-year">
                     <p>2021</p>
                   </div>
+                  
                 </div>
                 <img class="center-block mt3 mb5 ph1 w80" src="img/articles/frtools/riyaz/banner-hero.png" />
                 <h3 class=" align-center center-block mw800  o70 twhite"> The Riyaz tool helps our students to practice and master vocal notes from the app. It captures audio from the microphone sang by the student, and gives visual feedback to to calibrate and perfect their singing </h3>
@@ -90,7 +100,7 @@
             <div class="col-sm-12 col-md-12 col-lg-12" data-aos="fade-up">
               <div class="section" data-aos="fade-up">
                 <h1 class="section-title mb5">Practice with alankars </h1>
-                <p class="mw700 center-block align-center mt5 mb5">Alankars is a sequencial arrangement of musical notes. Singing along with alankars helps user to calibrate their vocal notes. This tool makes the students sing along with an alankar and gives them realtime visual feedback so that they can perfect each notes</p>
+                <p class="mw700 center-block align-center mt5 mb5">Alankars is a sequential arrangement of musical notes. Singing along with alankars helps user to calibrate their vocal notes. This tool makes the students sing along with an alankar and gives them realtime visual feedback so that they can perfect each notes</p>
                 <div class="col-sm-12 col-md-8 col-lg-8 mb3 justify-content-center mauto">
                   <video class="ph1 img-fluid" autoplay muted loop>
                     <source src="img/articles/frtools/riyaz/singingfullflow.mp4" type="video/mp4">
@@ -241,5 +251,11 @@
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+    <script>
+      // close overlay on click btn
+      $('#mboverlay').on('click', '#warningbtnprim', function () {
+        document.getElementById("mboverlay").style.display = "none";
+        });
+    </script>
   </body>
 </html>

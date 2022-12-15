@@ -23,6 +23,14 @@
     <link href="css/components.css" rel="stylesheet">
   </head>
   <body class="blackbg">
+                  <!-- mweb error overlay-->
+  <div id="mboverlay" class="">
+    <p class="center-block align-center mb0"> Hey there👋 </p>
+    <h1 class="center-block align-center mt2"><b>The site is not yet optimized for mobile devices</b></h1> 
+    <img class="center-block w80" src="img/mweb-error.svg" alt="">
+    <p class="align-center">Things might break sometimes. <br><b>Please do join through desktop web if possible.</b> Thanks! </p>
+    <btn class="primary" id="warningbtnprim">Continue anyway</btn>    
+  </div>
     <nav class="navbar navbar-light custom-navbar lv1 light">
       <div class="container">
         <div class="back-wrap">
@@ -44,17 +52,26 @@
             <div class="row justify-content-center">
               <div class="col-sm-12 col-md-12 col-lg-10" data-aos="fade-up">
                 <h2 class="text-header twhite ">Virtual Guitar</h2>
-                <div class="row justify-content-center">
-                  <h3 class="text-item-type-dark">UI</h3>
-                  <h3 class="text-item-type-dark">UX</h3>
-                  <h3 class="text-item-type-dark">Interactions</h3>
-                </div>
+
+                <div class="row justify-content-center story-details light">
+                  <div class="story-type">
+                    <p>UI</p>
+                    <p>•</p>
+                    <p>UX</p>
+                    <p>•</p>
+                    <p>Interactions</p>
+                  </div>
+                  <div class="story-year">
+                    <p>2022</p>
+                  </div>
+
                 <img class="center-block mt3 mb5 ph1 w80" src="img/articles/frtools/virtualguitar/banner-hero.png" />
-                <h3 class="d-block  align-center center-block mw800  o70 twhite"> The virtual guitar is a teaching aid for the instructors to visually explain the concepts of guitar. It is integrated as a feature in the FrontRow live class environment. The instructor uses this tool to explain chords and melodies to the students, inside the live class in realtime. </h3>
+                <h3 class="d-block  align-center center-block mw800  o70 twhite"> The virtual guitar is a teaching aid for the instructors to visually explain the concepts of guitar. It is integrated as a feature in the FrontRow live class environment. The instructor uses this tool to explain chords and melodies to the students,  in realtime. </h3>
               </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
       <div class="site-section twhite pb10" style="padding-top:0">
         <div class="container">
@@ -62,16 +79,16 @@
             <div class="col-sm-12 col-md-12 col-lg-12" data-aos="fade-up">
               <div class="section mt10" data-aos="fade-up">
                 <h1 class="section-title mb3"> Current scenario </h1>
-                <p class="mw800 center-block align-center mt2 mb2 o70">Durign a live class, the instructors don't have a seamless method to visually explain chord patterns and melody sequences. They depend on non-ideal solutions to explain these. </p>
+                <p class="mw800 center-block align-center mt2 mb2 o70">During a live class, the instructors don't have a seamless method to visually explain chord patterns and melody sequences. They depend on non-ideal solutions to explain these. </p>
                 <div class="row align-items-start justify-content-center mt2">
                   <div class="col-sm-4 col-md-4 col-lg-4 mt3 twhite justify-content-center">
                     <img class="center-block w60 mb2" src="img/articles/frtools/virtualguitar/s-11.png">
                     <h3 class="fs1-2">Showing a physical guitar on camera</h3>
-                    <p class="align-center o70 mt1">Often a challenge to show finger placement and closer look of fretboard</p>
+                    <p class="align-center o70 mt1">Often a challenge to show finger placement and closer look of the fretboard</p>
                   </div>
                   <div class="col-sm-4 col-md-4 col-lg-4 mt3 twhite">
                     <img class="center-block w60 mb2" src="img/articles/frtools/virtualguitar/s-12.png">
-                    <h3 class="fs1-2">Showing printed chord diagrams on camera</h3>
+                    <h3 class="fs1-2">Showing printed diagrams on camera</h3>
                     <p class="align-center o70 mt1">Depended on factors such as video quality and lighting</p>
                   </div>
                   <div class="col-sm-4 col-md-4 col-lg-4 mt3 twhite">
@@ -91,7 +108,7 @@
                   <div class="col-sm-4 col-md-3 col-lg-3 mt3 twhite">
                     <img class="center-block w60 mb2" src="img/articles/frtools/virtualguitar/s-21.svg">
                     <h3>In-class experience</h3>
-                    <p class="align-center o70 mt1">The guitar adds to the class experience, rather than switching between different envionments</p>
+                    <p class="align-center o70 mt1">The guitar adds to the class experience, rather than switching between different environments</p>
                   </div>
                   <div class="col-sm-4 col-md-3 col-lg-3 mt3 twhite justify-content-center">
                     <img class="center-block w60 mb2" src="img/articles/frtools/virtualguitar/s-22.svg">
@@ -101,7 +118,7 @@
                   <div class="col-sm-4 col-md-3 col-lg-3 mt3 twhite">
                     <img class="center-block w60 mb2" src="img/articles/frtools/virtualguitar/s-23.svg">
                     <h3>Audio sync</h3>
-                    <p class="align-center o70 mt1"> Guitar tones are generated on both the ends in sync, rather than transimitting the audio data from one to the other</p>
+                    <p class="align-center o70 mt1"> Guitar tones are generated on both the ends in sync, rather than transmitting the audio data from one to the other</p>
                   </div>
                   <div class="col-sm-4 col-md-3 col-lg-3 mt3 twhite">
                     <img class="center-block w60 mb2" src="img/articles/frtools/virtualguitar/s-24.svg">
@@ -113,7 +130,7 @@
               <div class="section" data-aos="fade-up">
                 <h1 class="section-title mb3"> Mode 1 • Chord diagrams </h1>
                 <img class="center-block w30 mb2" src="img/articles/frtools/virtualguitar/s-3h.svg">
-                <p class="mw700 center-block align-center mt2 mb5 o70">Learning chords is an inevitable part of the guitar learning process. The chord diagram mode helps instructor to choose a chord they wish to teach and in just one click the diagram gets generated on the virtual fretboard, along with the finger numbering and placement. </p>
+                <p class="mw700 center-block align-center mt2 mb5 o70">Learning chords is an inevitable part of the guitar learning process. The chord diagram mode helps the instructor to choose a chord they wish to teach and in just one click the diagram gets generated on the virtual fretboard, along with the finger numbering and placement. </p>
                 <img class="center-block w60 mb2" src="img/articles/frtools/virtualguitar/s-30.png">
                 <div class="row justify-content-center">
                   <div class="col-sm-12 col-md-12 col-lg-12 mt3">
@@ -130,7 +147,7 @@
                       </div>
                       <div class="col-sm-12 col-md-4 col-lg-4 mt3 ph1 align-items-center">
                         <img class="center-block w90 mb3" src="img/articles/frtools/virtualguitar/s-33.png">
-                        <p class="align-left o70 mt1"> After selecting a chord, instructor can play a preview of how it sounds. Either playing all strings at once (strumming), or playing each string one by one automatically (picking)</p>
+                        <p class="align-left o70 mt1"> After selecting a chord, instructor can play a preview of how it sounds. Either playing all the strings at once (strumming), or playing each string one by one automatically (picking)</p>
                       </div>
                     </div>
                   </div>
@@ -156,7 +173,7 @@
                       </div>
                       <div class="col-sm-12 col-md-4 col-lg-4 mt3 ph1 align-items-center">
                         <img class="center-block w80 mb3" src="img/articles/frtools/virtualguitar/s-43.png">
-                        <p class="align-left o70 mt1"> A much simpler way of representing each notes in the tablature for layman users to easily understand</p>
+                        <p class="align-left o70 mt1"> A simpler way of representing each notes in the tablature for layman users to easily understand</p>
                       </div>
                     </div>
                   </div>
@@ -249,5 +266,11 @@
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+    <script>
+      // close overlay on click btn
+      $('#mboverlay').on('click', '#warningbtnprim', function () {
+        document.getElementById("mboverlay").style.display = "none";
+        });
+    </script>
   </body>
 </html>

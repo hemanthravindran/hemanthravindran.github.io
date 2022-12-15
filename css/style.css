@@ -14,8 +14,8 @@
 @font-face {
   font-family: 'GT Walsheim Pro';
   src: url('../fonts/GTWalsheimPro-Thin.woff2') format('woff2'),
-      url('../fonts/GTWalsheimPro-Thin.woff') format('woff'),
-      url('../fonts/GTWalsheimPro-Thin.ttf') format('truetype');
+    url('../fonts/GTWalsheimPro-Thin.woff') format('woff'),
+    url('../fonts/GTWalsheimPro-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -24,8 +24,8 @@
 @font-face {
   font-family: 'GT Walsheim Pro';
   src: url('../fonts/GTWalsheimPro-Light.woff2') format('woff2'),
-      url('../fonts/GTWalsheimPro-Light.woff') format('woff'),
-      url('../fonts/GTWalsheimPro-Light.ttf') format('truetype');
+    url('../fonts/GTWalsheimPro-Light.woff') format('woff'),
+    url('../fonts/GTWalsheimPro-Light.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -34,26 +34,28 @@
 @font-face {
   font-family: 'GT Walsheim Pro';
   src: url('../fonts/GTWalsheimPro-Regular.woff2') format('woff2'),
-      url('../fonts/GTWalsheimPro-Regular.woff') format('woff'),
-      url('../fonts/GTWalsheimPro-Regular.ttf') format('truetype');
+    url('../fonts/GTWalsheimPro-Regular.woff') format('woff'),
+    url('../fonts/GTWalsheimPro-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'GT Walsheim Pro';
   src: url('../fonts/GTWalsheimPro-Medium.woff2') format('woff2'),
-      url('../fonts/GTWalsheimPro-Medium.woff') format('woff'),
-      url('../fonts/GTWalsheimPro-Medium.ttf') format('truetype');
+    url('../fonts/GTWalsheimPro-Medium.woff') format('woff'),
+    url('../fonts/GTWalsheimPro-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'GT Walsheim Pro';
   src: url('../fonts/GTWalsheimPro-Bold.woff2') format('woff2'),
-      url('../fonts/GTWalsheimPro-Bold.woff') format('woff'),
-      url('../fonts/GTWalsheimPro-Bold.ttf') format('truetype');
+    url('../fonts/GTWalsheimPro-Bold.woff') format('woff'),
+    url('../fonts/GTWalsheimPro-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -63,8 +65,8 @@
 @font-face {
   font-family: 'GT Walsheim Pro';
   src: url('../fonts/GTWalsheimPro-Black.woff2') format('woff2'),
-      url('../fonts/GTWalsheimPro-Black.woff') format('woff'),
-      url('../fonts/GTWalsheimPro-Black.ttf') format('truetype');
+    url('../fonts/GTWalsheimPro-Black.woff') format('woff'),
+    url('../fonts/GTWalsheimPro-Black.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -75,7 +77,7 @@
 
 
 body {
-  font-family: "GT Walsheim Pro", "Poppins",sans-serif;
+  font-family: "GT Walsheim Pro", "Poppins", sans-serif;
   color: #0d1e2d;
   font-weight: normal;
 }
@@ -122,7 +124,11 @@ p1 {
   display: block;
   letter-spacing: .04rem;
 }
-.o0{opacity:0;}
+
+.o0 {
+  opacity: 0;
+}
+
 .o10 {
   opacity: .1;
 }
@@ -188,7 +194,7 @@ p1 {
 }
 
 .clipcontent {
-  overflow:hidden
+  overflow: hidden
 }
 
 .pb0 {
@@ -406,7 +412,7 @@ p1 {
 }
 
 .white-bg {
-  background:white;
+  background: white;
 }
 
 .tgray {
@@ -746,7 +752,7 @@ h3.section-title {
 }
 
 .item .item-wrap p.item-client {
-  margin-top:  5px;
+  margin-top: 5px;
 }
 
 .item .item-wrap p.item-type {
@@ -1188,24 +1194,33 @@ video {
   display: flex;
   width: 100%;
 }
-.custom-navbar.lv1 a.burger{display: none;}
-.custom-navbar div.back-wrap a.back-btn{
+
+.custom-navbar.lv1 a.burger {
+  display: none;
+}
+
+.custom-navbar div.back-wrap a.back-btn {
   padding: 4px;
-  border-radius: 50%;
+  border-radius: 30px;
   transition: all .2s ease;
 }
-.custom-navbar.dark div.back-wrap a.back-btn{
-  border:2px solid rgba(0,0,0,.2);  
+
+.custom-navbar.dark div.back-wrap a.back-btn {
+  border: 2px solid rgba(0, 0, 0, .2);
 }
-.custom-navbar.dark div.back-wrap a.back-btn:hover{
-  border:2px solid rgba(0,0,0,.8);  
+
+.custom-navbar.dark div.back-wrap a.back-btn:hover {
+  border: 2px solid rgba(0, 0, 0, .8);
 }
-.custom-navbar.light div.back-wrap a.back-btn{
-  border:2px solid rgba(255,255,255,.2);
+
+.custom-navbar.light div.back-wrap a.back-btn {
+  border: 2px solid rgba(255, 255, 255, .2);
 }
-.custom-navbar.light div.back-wrap a.back-btn:hover:hover{
-  border:2px solid rgba(255,255,255,.7);
+
+.custom-navbar.light div.back-wrap a.back-btn:hover:hover {
+  border: 2px solid rgba(255, 255, 255, .7);
 }
+
 .custom-navbar a img {
   width: 40px;
   height: 40px;
@@ -1250,11 +1265,32 @@ video {
   color: #000;
 }
 
-.d-hide{display:none !important;}
+.d-hide {
+  display: none !important;
+}
 
 @media (max-width: 780px) {
   .custom-navbar>.container {
     padding-right: 0;
     padding-left: 0;
   }
+
+}
+
+@media screen and (max-width: 480px) {
+  #sortnfilter-wrap {
+    display: none;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .pagetitle {
+    font-size: 4rem !important;
+  }
+}
+@media screen and (min-width: 481px)
+{
+#mboverlay{display:none;}
 }

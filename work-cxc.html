@@ -25,6 +25,15 @@
     <link href="css/components.css" rel="stylesheet">
   </head>
   <body style="background:#FB5256">
+
+              <!-- mweb error overlay-->
+  <div id="mboverlay" class="">
+    <p class="center-block align-center mb0"> Hey there👋 </p>
+    <h1 class="center-block align-center mt2"><b>The site is not yet optimized for mobile devices</b></h1> 
+    <img class="center-block w80" src="img/mweb-error.svg" alt="">
+    <p class="align-center">Things might break sometimes. <br><b>Please do join through desktop web if possible.</b> Thanks! </p>
+    <btn class="primary" id="warningbtnprim">Continue anyway</btn>    
+  </div>
     <nav class="navbar navbar-light custom-navbar lv1 light">
       <div class="container">
         <div class="back-wrap">
@@ -73,7 +82,7 @@
             <div class="col-sm-12 col-md-12 col-lg-10">
               <h2 class="section-title">Designing for a 2 feet-away interface</h2>
               <div class="col-sm-12 col-md-12 col-lg-12">
-                <p class="tgray mw700 center-block mb5"> The CXC module is placed on the back side of the front seat, and the user will be interacting with it at a distance of 1.5ft to 2ft. Not many devices in our day today life are built around such a usecase, so the problem statement is fresh and interesting. Morevover since the interactions happen inside a moving cab, there are challenges like instability of the hand and the lack of touch precision (Thanks to the Indian roads!). </p>
+                <p class="tgray mw700 center-block mb5"> The CXC module is placed on the back side of the front seat, and the user will be interacting with it at a distance of 1.5ft to 2ft. Not many devices in our day today life are built around such a use case, so the problem statement is fresh and interesting. Moreover since the interactions happen inside a moving cab, there are challenges like instability of the hand and the lack of touch precision (Thanks to the Indian roads!). </p>
               </div>
               <img class="br10 w100 mb2" src="img/articles/cxc3/2ftexp.png" />
               <div class="row mt3 justify-content-center">
@@ -82,7 +91,7 @@
                   <p class="text-center tgray">
                     <b>Distant Operation</b>
                     <br>
-                    <br>problem with moving cab is that stability of hands os guadh asdjj
+                    <br>Conventional scale of UI elements won't work
                   </p>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4">
@@ -90,7 +99,7 @@
                   <p class="text-center tgray">
                     <b>Shaky Hands</b>
                     <br>
-                    <br>problem with moving cab is that stability of hands os guadh asdjj
+                    <br>Lack of touch precision leads to faulty interactions
                   </p>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4">
@@ -98,7 +107,7 @@
                   <p class="text-center tgray">
                     <b>Screen Glare</b>
                     <br>
-                    <br>problem with moving cab is that stability of hands os guadh asdjj
+                    <br>Color schemes with less contrast hampers legibility
                   </p>
                 </div>
               </div>
@@ -122,17 +131,17 @@
               <h2 class="section-title text-white">Visual Language</h2>
               <p class="text-center center-block text-white mw700">PALETTE <br>
                 <br>
-                <p1 class="o50">A dark-themed palette with complementary accent colours. Tinted grays for vibrancy. <br>Brand Red as secondary colour used for call to actions and critical indications. </p1>
+                <p1 class="o50 align-center">A dark-themed palette with complementary accent colours. Tinted grays for vibrancy. <br>Brand Red as secondary colour used for call to actions and critical indications. </p1>
               </p>
               <img class="mw700 center-block mt3 mb5" src="img/articles/cxc3/palette.svg" />
               <p class="text-center center-block text-white mw700 mt10 mb3">ICON SET <br>
                 <br>
-                <p1 class="o50">Clean, minimal and fill-style icons for improved legibility.</p1>
+                <p1 class="align-center o50">Clean, minimal and fill-style icons for improved legibility.</p1>
               </p>
               <img class="mw600 center-block mt3 mb5" src="img/articles/cxc3/uiicons.svg" />
               <p class="text-center center-block text-white mw700 mt10 mb3">TYPOGRAPHY <br>
                 <br>
-                <p1 class="o50">Akkurat sans is highly legible in both small and large sizes. All use cases are categorized under just 7 text styles to maintain hygeine.</p1>
+                <p1 class="align-center o50">Akkurat sans is highly legible in both small and large sizes. All use cases are categorized under just 7 text styles to maintain hygeine.</p1>
               </p>
               <img class="mw700 center-block m3" src="img/articles/cxc3/typography.svg" />
             </div>
@@ -192,7 +201,7 @@
                 <div class=" row align-items-center">
                   <div class="col-sm-6 col-md-4 col-lg-4">
                     <h3 class="align-left tlight">Instant Brand Recognition</h3>
-                    <p>A welcome screen that adapts to different contexts around the user</p>
+                    <p>New album artwork template helps in easy differentiation between playlists by OLA Play and Apple music</p>
                   </div>
                   <div class="col-sm-6 col-md-8 col-lg-8">
                     <img class="" src="img/articles/cxc3/opvsam.png" />
@@ -313,5 +322,11 @@
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+    <script>
+      // close overlay on click btn
+      $('#mboverlay').on('click', '#warningbtnprim', function () {
+        document.getElementById("mboverlay").style.display = "none";
+        });
+    </script>
   </body>
 </html>

@@ -23,6 +23,14 @@
     <link href="css/components.css" rel="stylesheet">
   </head>
   <body style="background:#ffe834">
+                  <!-- mweb error overlay-->
+  <div id="mboverlay" class="">
+    <p class="center-block align-center mb0"> Hey there👋 </p>
+    <h1 class="center-block align-center mt2"><b>The site is not yet optimized for mobile devices</b></h1> 
+    <img class="center-block w80" src="img/mweb-error.svg" alt="">
+    <p class="align-center">Things might break sometimes. <br><b>Please do join through desktop web if possible.</b> Thanks! </p>
+    <btn class="primary" id="warningbtnprim">Continue anyway</btn>    
+  </div>
     <nav class="navbar navbar-light custom-navbar lv1 dark">
       <div class="container">
         <div class="back-wrap">
@@ -82,7 +90,7 @@
                     <img class="w90" src="img/articles/zerokf/oscillations.png" />
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p> The whole idea of this animation is around oscillations. If looked at each individual parts of the face, they all are moving or rotating from one state, reach another state and comes back to the original state. Means they are all oscillating in terms of rotation or position. For this animation to be looped infinitely, these movements have to be repeated at regular intervals and have to reach back to the original state at the end of every interval. Oscillations generate wave functions. <b>On the contrary,why not use a wave function to drive oscillations?</b>
+                    <p> The whole idea of this animation is around oscillations. If looked at each individual parts of the face, they all are moving or rotating from one state, reach another state and comes back to the original state. Means they are all oscillating in terms of rotation or position. For this animation to be looped infinitely, these movements have to be repeated at regular intervals and have to reach back to the original state at the end of every interval. Oscillations generate wave functions. <b>On the contrary, why not use a wave function to drive oscillations?</b>
                     </p>
                   </div>
                 </div>
@@ -97,7 +105,7 @@
                     <img class="w90" src="img/articles/zerokf/sinescript.png" />
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p> After effects expressions gives us the power to generate values according to mathematical functions. Here in this case a sine function will be the perfect one. It alternates between negative and positive values and repeats at regular time intervals. A sine function that continuously returns values from -10 to 10 at intervals of 60 frames (2 secs).Another sine function which is 2x faster is also made from the original function; for faster moving parts of the face such as the eye.The sine functions are also multiplied by an easing function for smooth movements of the oscillations. </p>
+                    <p> After effects expressions gives us the power to generate values according to mathematical functions. Here in this case a sine function will be the perfect one. It alternates between negative and positive values and repeats at regular time intervals. A sine function that continuously returns values from -10 to 10 at intervals of 60 frames (2 secs). Another sine function which is 2x faster is also made from the original function; for faster moving parts of the face such as the eye. The sine functions are also multiplied by an easing function for smooth movements of the oscillations. </p>
                   </div>
                 </div>
               </div>
@@ -108,7 +116,7 @@
                     <img class="w100" src="img/articles/zerokf/layering.png" />
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p> The face is constructed as different layers arranged in the 3D space, slightly tilted (on x axis) and spaced a little apart from one another. This is to create an illusion of depth at the time of motion.Anchor points are placed for each element according to the required movement in the final output. </p>
+                    <p> The face is constructed as different layers arranged in the 3D space, slightly tilted (on x axis) and spaced a little apart from one another. This is to create an illusion of depth at the time of motion. Anchor points are placed for each element according to the required movement in the final output. </p>
                   </div>
                 </div>
               </div>
@@ -134,7 +142,7 @@
                     </video>
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p> We have connected all the parts together. Now movement of each part is also dependent on it's parent's movement.Though the rigging part is done here, still all the movements happen at the same scale at the same point in time; because values from the sine function is directly mapped to every part without any change.The values from the sine function need to be modified differently for each part.
+                    <p> We have connected all the parts together. Now movement of each part is also dependent on it's parent's movement. Though the rigging part is done here, still all the movements happen at the same scale at the same point in time; because values from the sine function is directly mapped to every part without any change. The values from the sine function need to be modified differently for each part.
                   </div>
                 </div>
               </div>
@@ -145,7 +153,7 @@
                     <img src="img/articles/zerokf/fixvalues.png" />
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p> The values for movement of each part are either multiplied, divided or inversed with different numbers according the required movement.And to achieve follow throughs and anticipations, the movements are slightly offset in time backward and forward.Now the sine function drives different parts at different scales, asynchronously.
+                    <p> The values for movement of each part are either multiplied, divided or inversed with different numbers according the required movement. And to achieve follow throughs and anticipations, the movements are slightly offset in time backward and forward. Now the sine function drives different parts at different scales, asynchronously.
                   </div>
                 </div>
               </div>
@@ -231,7 +239,7 @@
                 <a href="work-frtools.html" class="item-wrap fancybox">
                   <div class="mw-img-wrap">
                     <video class="img-fluid center-block" style="transform:scale(1.4);margin-top: 20px;			margin-left: 50px;
-              }" autoplay muted loop>
+              " autoplay muted loop>
                       <source src="img/covers/frtools.mp4" type="video/mp4">
                     </video>
                   </div>
@@ -276,5 +284,11 @@
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+    <script>
+      // close overlay on click btn
+      $('#mboverlay').on('click', '#warningbtnprim', function () {
+        document.getElementById("mboverlay").style.display = "none";
+        });
+    </script>
   </body>
 </html>

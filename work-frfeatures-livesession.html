@@ -23,6 +23,14 @@
     <link href="css/components.css" rel="stylesheet">
   </head>
   <body class="twhite" style="background:#1E195C">
+                  <!-- mweb error overlay-->
+  <div id="mboverlay" class="">
+    <p class="center-block align-center mb0"> Hey there👋 </p>
+    <h1 class="center-block align-center mt2"><b>The site is not yet optimized for mobile devices</b></h1> 
+    <img class="center-block w80" src="img/mweb-error.svg" alt="">
+    <p class="align-center">Things might break sometimes. <br><b>Please do join through desktop web if possible.</b> Thanks! </p>
+    <btn class="primary" id="warningbtnprim">Continue anyway</btn>    
+  </div>
     <nav class="navbar navbar-light custom-navbar lv1 light">
       <div class="container">
         <div class="back-wrap">
@@ -58,7 +66,7 @@
               <video class=" img-fluid center-block w70" autoplay muted loop>
                 <source src="img/articles/frfeatures/livesession/hero.mp4" type="video/mp4">
               </video>
-              <h3 class="align-center center-block mw800 o70 mt5 mb5"> Live classes are the core aspect of the FrontRow learning platform. The way online classes are conducted here is much different from usual video conferencing platform, with need of custom features and new methods. So we decided to build an in-house live class platform, on top of the <a style="display:inline-block; text-decoration: underline!important ; color:white" href="https://www.100ms.live/" target="_blank"> 100ms</a> live framework. </h3>
+              <h3 class="align-center center-block mw800 o70 mt5 mb5"> Live classes are the core aspect of the FrontRow learning platform. The way online classes are conducted here is much different from usual video conferencing platform, with need of custom features and new methods. So we decided to build an in-house live class platform, on top of the <a style="display:inline-block; text-decoration: underline!important ; color:white" href="https://www.100ms.live/" target="_blank"> 100ms</a> live platform. </h3>
             </div>
           </div>
         </div>
@@ -69,48 +77,48 @@
             <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="section pt5 mt3" data-aos="fade-up">
                 <h1 class="section-title mb3"> Need of a tool </h1>
-                <p class="mw800 center-block align-center mt2 mb2 o70">To bring in a more interactive, rich and deep learning experience, the live classes on FrontRow demands custom features and tools, that are not readily available on the conventional platforms like Zoom, Google meet etc. These need to be designed and developed in-house, and integrated into an exisitng live video framework. Some of those are are specified as follows</p>
+                <p class="mw800 center-block align-center mt2 mb2 o70">To bring in a more interactive, rich and deep learning experience, the live classes on FrontRow demands custom features and tools, that are not readily available on the conventional platforms like Zoom, Google meet etc. These need to be designed and developed in-house, and integrated into an exisitng live video framework.</p>
                 <div class="row align-items-start justify-content-center mt2">
                   <div class="col-sm-6 col-md-4 col-lg-4 mt3 ">
                     <img class="center-block w30 mb2" src="img/articles/frfeatures/livesession/s-11.svg">
                     <h3 class="fs1-2">Lesson plan</h3>
-                    <p class="align-center o50 mt1">Since they don't own a physical piano, they just watch the class and leave</p>
+                    <p class="align-center o50 mt1">The sequence of topics and sessions in a lesson can be viewed upfront</p>
                   </div>
                   <div class="col-sm-6 col-md-4 col-lg-4 mt3 ">
                     <img class="center-block w30 mb2" src="img/articles/frfeatures/livesession/s-12.svg">
                     <h3 class="fs1-2">Virtual instruments</h3>
-                    <p class="align-center o50 mt1">Since they don't own a physical piano, they just watch the class and leave</p>
+                    <p class="align-center o50 mt1">It's easier to teach musical instruments with the help of visual aids</p>
                   </div>
                   <div class="col-sm-6 col-md-4 col-lg-4 mt3 ">
                     <img class="center-block w30 mb2" src="img/articles/frfeatures/livesession/s-13.svg">
                     <h3 class="fs1-2">Interactive quiz & polls</h3>
-                    <p class="align-center o50 mt1">Since they don't own a physical piano, they just watch the class and leave</p>
+                    <p class="align-center o50 mt1">Helps in group engagement and reinforcing important points</p>
                   </div>
                   <div class="col-sm-6 col-md-4 col-lg-4 mt3  justify-content-center">
                     <img class="center-block w30 mb2" src="img/articles/frfeatures/livesession/s-14.svg">
                     <h3 class="fs1-2">Reactions</h3>
-                    <p class="align-center o50 mt1">Often a challenge for the student's to relate the view with their piano</p>
+                    <p class="align-center o50 mt1">Helps in better engagement and delight and appreciation</p>
                   </div>
                   <div class="col-sm-6 col-md-4 col-lg-4 mt3 ">
                     <img class="center-block w30 mb2" src="img/articles/frfeatures/livesession/s-15.svg">
                     <h3 class="fs1-2">Performance sessions</h3>
-                    <p class="align-center o50 mt1">Since they don't own a physical piano, they just watch the class and leave</p>
+                    <p class="align-center o50 mt1">Helps in finding good talents and give exposure</p>
                   </div>
                   <div class="col-sm-6 col-md-4 col-lg-4 mt3 ">
                     <img class="center-block w30 mb2" src="img/articles/frfeatures/livesession/s-16.svg">
                     <h3 class="fs1-2">Virtual assistant</h3>
-                    <p class="align-center o50 mt1">Since they don't own a physical piano, they just watch the class and leave</p>
+                    <p class="align-center o50 mt1">Provides automated assistance and data collection from students</p>
                   </div>
                 </div>
               </div>
               <div class="section" data-aos="fade-up">
                 <h1 class="section-title mb3">Framework for web UI</h1>
-                <p class="mw700 center-block align-center mb2 o70"> Web UI is optimised for our instructors, since smaller devices is something they don't prefer for giving classes.</p>
+                <p class="mw700 center-block align-center mb2 o70"> Our instructors prefer teaching from desktop-web rather than mobile devices. So the Web UI is built around their needs and optimised for them.</p>
                 <img class="center-block w100 mb2" src="img/articles/frfeatures/livesession/s-21.png">
                 <div class="row align-items-start justify-content-center">
                   <div class="col-sm-12 col-md-12 col-lg-12 mt5">
                     <h3 class="mb3" id="title-hero-box">1 • Hero box</h3>
-                    <p class="align-center o70 mt1 mb3 w90 center-block">The hero box is a dynamic container for different types of class contents</p>
+                    <p class="align-center o70 mt1 mb3 w90 center-block">The hero box is a dynamic container for different types of classes and contexts</p>
                     <div class="container">
                       <div id="LS-herobox" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
                         <ol class="carousel-indicators">
@@ -217,13 +225,13 @@
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-12 mt7">
                     <h3 class="mb3" id="title-side-panel">2 • Side panel</h3>
-                    <p class="align-center o70 mt1 mb3 w90 center-block">Side panel is where the instructor gets majority of the information about the class. They can swith between lesson plan, participant list and chat history. And any other future controls or features we might add in. </p>
+                    <p class="align-center o70 mt1 mb3 w90 center-block">Side panel is where the instructor gets majority of the information about the class. They can switch between lesson plan, participant list and chat history. And any other controls or features that might get added in the future. </p>
                     <img class="center-block w90 mt3 mb2" style="max-height: 200px;" src="img/articles/frfeatures/livesession/s-41.svg">
                     <img class="center-block mt3 mb2 w80" src="img/articles/frfeatures/livesession/s-42.png">
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-12 mt7">
                     <h3 class="mb3" id="title-menu-bar">3 • Menu bar</h3>
-                    <p class="align-center o70 mt1 mb3 w90 center-block">Hero box is where the main content is displayed. The content can vary depending on the context of the class. </p>
+                    <p class="align-center o70 mt1 mb3 w90 center-block">Most of the controls for are placed on the menubar. Instructors can enable tools and instruments, activate offers, launch quiz etc. Generic UI related controls like reactions, layout options etc are also part of the menu bar.</p>
                     <img class="center-block mt3 mb2" src="img/articles/frfeatures/livesession/s-51.png">
                   </div>
                 </div>
@@ -231,12 +239,12 @@
               <div class="section mt10" data-aos="fade-up">
                 <div class="row justify-content-center">
                   <h1 class="section-title mb3 center-block"> Mobile UI </h1>
-                  <p class="mw700 center-block align-center mb2 o70"> Live session for mobile app is completely for students. Hence all the instructor related controls are cut down here. The framework is similar to WEB UI, only the layout is different so as to optimise for small screens.</p>
+                  <p class="mw700 center-block align-center mb2 o70"> Mobile app is completely optimised for the students. Hence all the instructor related elements are disabled here. The framework is somewhat similar to WEB UI, only the layout is differently adapted for small screens.</p>
                   <img class="center-block w100 mt5 mb2" src="img/articles/frfeatures/livesession/s-61.png">
                 </div>
                 <div class="row justify-content-center mt10">
                   <h3 class=" mb1 center-block">Features </h3>
-                  <p class="align-center o70 mt1 mb5 w90 center-block">Hero box is where the main content is displayed. The content can vary depending on the context of the class. </p>
+                  <p class="align-center o70 mt1 mb5 w90 center-block">Some of the features of live session and different usage scenarios below. </p>
                 </div>
                 <div class="row align-items-start justify-content-center">
                   <div class="col-sm-12 col-md-3 col-lg-3">
@@ -260,7 +268,7 @@
               <div class="section mt10" data-aos="fade-up">
                 <div class="row justify-content-center">
                   <h1 class="section-title mb3 center-block"> UI Components </h1>
-                  <p class="mw700 center-block align-center mb2 o70"> Live session for mobile app is completely for students. Hence all the instructor related controls are cut down here. The framework is similar to WEB UI, only the layout is different so as to optimise for small screens.</p>
+                  <!-- <p class="mw700 center-block align-center mb2 o70"> Live session for mobile app is completely for students. Hence all the instructor related controls are cut down here. The framework is similar to WEB UI, only the layout is different so as to optimise for small screens.</p> -->
                   <img class="center-block w100 mt5 mb2" src="img/articles/frfeatures/livesession/s-71.png">
                 </div>
               </div>
@@ -352,6 +360,12 @@
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+    <script>
+      // close overlay on click btn
+      $('#mboverlay').on('click', '#warningbtnprim', function () {
+        document.getElementById("mboverlay").style.display = "none";
+        });
+    </script>
   </body>
 </html>
 <style>

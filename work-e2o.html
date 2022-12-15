@@ -45,7 +45,16 @@
       opacity: 1 !important;
       transition: all .2s ease
     }
-  </style>1style> <body class="blackbg">
+  </style> 
+  <body class="blackbg">
+                  <!-- mweb error overlay-->
+  <div id="mboverlay" class="">
+    <p class="center-block align-center mb0"> Hey there👋 </p>
+    <h1 class="center-block align-center mt2"><b>The site is not yet optimized for mobile devices</b></h1> 
+    <img class="center-block w80" src="img/mweb-error.svg" alt="">
+    <p class="align-center">Things might break sometimes. <br><b>Please do join through desktop web if possible.</b> Thanks! </p>
+    <btn class="primary" id="warningbtnprim">Continue anyway</btn>    
+  </div>
     <nav class="navbar navbar-light custom-navbar lv1 light">
       <div class="container">
         <div class="back-wrap">
@@ -79,7 +88,7 @@
                 <video class="center-block w80" width="80%" autoplay muted style="border-radius:10px;">
                   <source src="img/articles/e2o/e2ohero.mp4" type="video/mp4" />
                 </video>
-                <p class="text-subheader mw800 center-block text-white mt5">A product video done for visualising E 2.0 battery by OLA Electric. The E 2.0 aka E2O is the new generation swappable batteries designed and manufactured by OLA Electric Mobility, which is the core of their EV ecosystem. A faster way to refuel electric vehicles such as E-rickshaws, E-bikes and E-scooters, compared to the conventional charging methods.</p>
+                <p class="text-subheader mw800 center-block text-white mt5">A product video done for visualising E 2.0 battery by OLA Electric. The E 2.0 aka E2O is the new generation swappable batteries designed and manufactured by OLA Electric Mobility, which is the core of their EV ecosystem. A faster way to re-fuel electric vehicles such as E-rickshaws, E-bikes and E-scooters, compared to the conventional charging methods.</p>
               </div>
             </div>
           </div>
@@ -102,23 +111,23 @@
           <h2 class="section-title text-white">Shots</h2>
           <div class="row justify-content-center">
             <div class="col-sm-12 col-md-12 col-lg-12 mb5" data-aos="fade-up">
-              <p class="text-center tgray mb5">Compact Design Packed with Extreme Power</p>
+              <p class="text-center tgray mb5">Compact design packed with maximum power</p>
               <img class="w60 center-block mb3" src="img/articles/e2o/s1.png" />
             </div>
             <div class="col-sm-12 col-md-12 col-lg-12 m5" data-aos="fade-up">
-              <p class="text-center tgray mb5">Rugged, High Density Cell Packaging</p>
+              <p class="text-center tgray mb5">Rugged, high-density cell packaging</p>
               <img class="w50 center-block mb3" src="img/articles/e2o/s2.png" />
             </div>
             <div class="col-sm-12 col-md-12 col-lg-12 m5" data-aos="fade-up">
-              <p class="text-center tgray mb0">Smart Connectivity, Ergonomic</p>
+              <p class="text-center tgray mb0">Smart connectivity & ergonomics</p>
               <img class="w90 center-block" src="img/articles/e2o/s3.png" />
             </div>
             <div class="col-sm-12 col-md-12 col-lg-12 m5" data-aos="fade-up">
-              <p class="text-center tgray mb2">Integrated Temperature Management</p>
+              <p class="text-center tgray mb2">Integrated thermal management system</p>
               <img class="w70 center-block mb2" src="img/articles/e2o/s4.png" />
             </div>
             <div class="col-sm-12 col-md-12 col-lg-12 m5" data-aos="fade-up">
-              <p class="text-center tgray mb3">Latest Cell Technology, Intelligent Battery Management System </p>
+              <p class="text-center tgray mb3">Latest cell technology, onboard battery management system </p>
               <img class="w80 center-block" src="img/articles/e2o/s5.png" />
             </div>
           </div>
@@ -217,5 +226,11 @@
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+    <script>
+      // close overlay on click btn
+      $('#mboverlay').on('click', '#warningbtnprim', function () {
+        document.getElementById("mboverlay").style.display = "none";
+        });
+    </script>
   </body>
 </html>

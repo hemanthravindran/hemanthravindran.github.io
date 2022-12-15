@@ -23,6 +23,14 @@
     <link href="css/components.css" rel="stylesheet">
   </head>
   <body style="background: linear-gradient(90deg, #162645, #105444);">
+                  <!-- mweb error overlay-->
+  <div id="mboverlay" class="">
+    <p class="center-block align-center mb0"> Hey there👋 </p>
+    <h1 class="center-block align-center mt2"><b>The site is not yet optimized for mobile devices</b></h1> 
+    <img class="center-block w80" src="img/mweb-error.svg" alt="">
+    <p class="align-center">Things might break sometimes. <br><b>Please do join through desktop web if possible.</b> Thanks! </p>
+    <btn class="primary" id="warningbtnprim">Continue anyway</btn>    
+  </div>
     <nav class="navbar navbar-light custom-navbar lv1 light">
       <div class="container">
         <div class="back-wrap">
@@ -67,14 +75,14 @@
             <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="section mb5" data-aos="fade-up">
                 <h1 class="section-title mb3">How it works</h1>
-                <p class="mw700 center-block align-just mb5 lh2 o70"> Students entering into the rap battle section can either start battling with an opponent, or just watch & vote for others' battles. When a student enters a battle, they are matched with an opponent and gets ready for dissing each other (which we call battle). A diss means a video of the student dissing the opponent. They have 24 hours time to diss each other as many times they want. Once the time is expired, their sequence of diss videos is stitched as a streak and published for voting. Other rap students can watch & vote the streak for 48 hours, and then the winner is announced. </p>
+                <p class="mw700 center-block align-just mb5 lh2 o70"> Students entering into the rap battle section can either start battling with an opponent, or just watch & vote for others' battles. When a student enters a battle, they are matched with an opponent and gets ready for dissing each other (which we call battle). A diss means a video of the student dissing the opponent. They have 24 hours time to diss each other as many times they want. Once the time is expired, the sequence of diss videos is stitched as a streak and published for voting. Other rap students can watch & vote the streak for 48 hours, and then the winner is decided from total votes. </p>
                 <img class="center-block w80 mb2" src="img/articles/frfeatures/h2h/s-1.svg">
               </div>
               <div class="section" data-aos="fade-up">
                 <div class="row justify-content-center align-items-center">
                   <div class="col-sm-12 col-md-12 col-lg-12 align-items-center">
                     <h1 class="section-title mb3 align-center center-block ">Battles home</h1>
-                    <p class="mw700 center-block align-just mt3 mb5 o70"> The home page for rap battles is mainly a <b>feed</b> of all ongoing and completed battles. The primary action is to <b>start a new battle</b> and the secondary option is to vote on others' battles. </p>
+                    <p class="mw700 center-block align-just mt3 mb5 o70"> The home page for rap battles is mainly a <b>feed</b> of all ongoing and completed battles. The primary action is to <b>start a new battle</b> and the feed is to discover and vote for battles. </p>
                     <div class="row align-items-end justify-content-center">
                       <div class="col-sm-12 col-md-3 col-lg-3">
                         <img class="center-block w100 " src="img/articles/frfeatures/h2h/s-21.png">
@@ -95,7 +103,7 @@
                 <div class="row justify-content-center align-items-center">
                   <div class="col-sm-12 col-md-12 col-lg-12 align-items-center">
                     <h1 class="section-title mb3 align-center center-block ">Opponent matching</h1>
-                    <p class="mw700 center-block align-just mt3 mb5 o70"> Once a user starts a new battle from the homepage, another user is matched <b>based on the user's battling rank (win/attended ratio)</b>. The closest one is selected as an opponent. The user can visit the profile and chat with opponent if they wish to, and then start the battle form their end. If they prefer to chose a different opponent, they can retry the matching process. </p>
+                    <p class="mw700 center-block align-just mt3 mb5 o70"> Once a user starts a new battle from the homepage, another user is matched <b>based on the user's battling rank (win/attended ratio)</b>. The closest one is selected as an opponent. The user can visit the profile and chat with opponent if they wish to, and then start the battle form their end. If they prefer to chose a different opponent, they can restart the matching process. </p>
                     <div class="row align-items-center justify-content-center">
                       <div class="col-sm-12 col-md-3 col-lg-3">
                         <video class="img-fluid w100 center-block" autoplay muted loop>
@@ -123,7 +131,7 @@
                         <video class="img-fluid w100 center-block" autoplay muted loop>
                           <source src="img/articles/frfeatures/h2h/s-41.mp4" type="video/mp4">
                         </video>
-                        <p class="mw700 center-block align-left mt3 mb5 o70"> Once the opponent is matched, the user is asked to upload or shoot their first diss. The upload screen gives an idea of how the entire streak is going to look like</p>
+                        <p class="mw700 center-block align-left mt3 mb5 o70"> Once the opponent is matched, the user is asked to upload or shoot their first diss. The upload screen gives an idea of how the entire streak is going to look like.</p>
                       </div>
                       <div class="col-sm-12 col-md-1 col-lg-1 align-items-center">
                         <img class="center-block w50 o70 " src="img/articles/frfeatures/h2h/arrow.svg">
@@ -132,14 +140,14 @@
                         <video class="img-fluid w100 center-block" autoplay muted loop>
                           <source src="img/articles/frfeatures/h2h/s-42.mp4" type="video/mp4">
                         </video>
-                        <p class="mw700 center-block align-left mt3 mb5 o70"> Shooting from camera has features like visual metronome to help them keep up with the tempo. Also a countdown indication of 30 seconds is shown</p>
+                        <p class="mw700 center-block align-left mt3 mb5 o70"> Shooting from camera has features like metronome to help them keep up with the tempo. Also a countdown indication of 30 seconds is shown.</p>
                       </div>
                       <div class="col-sm-12 col-md-1 col-lg-1 align-items-center">
                         <img class="center-block w50 o70 " src="img/articles/frfeatures/h2h/arrow.svg">
                       </div>
                       <div class="col-sm-12 col-md-3 col-lg-3">
                         <img class="center-block w100 " src="img/articles/frfeatures/h2h/s-43.png">
-                        <p class="mw700 center-block align-left mt3 mb5 o70"> Once the video is shot or uploaded, it becomes the first diss in the streak. Until the opponent disses back the user, they can't do anything but wait.</p>
+                        <p class="mw700 center-block align-left mt3 mb5 o70"> Once the video is shot or uploaded, it becomes the first diss in the streak. They just need to wait until the opponent disses back the user, and diss again.</p>
                       </div>
                     </div>
                   </div>
@@ -149,7 +157,7 @@
                 <div class="row justify-content-center align-items-center">
                   <div class="col-sm-12 col-md-12 col-lg-12 align-items-center">
                     <h1 class="section-title mb3 align-center center-block ">The streak</h1>
-                    <p class="mw700 center-block align-just mt3 mb5 o70 align-just"> For a battle to be able to get published, the streak needs to have atleast 1 diss from each side. The validity of streak creation is <b>24 hours</b> and the participants can upload as many disses they want during this time. A color coded pagination is associated with a streak for easily relate with each participant. </p>
+                    <p class="mw700 center-block align-just mt3 mb5 o70 align-just"> For a battle to be able to get published, the streak needs to have atleast 1 diss from each side. The validity of streak creation is <b>24 hours</b> and the participants can upload as many disses they want during this time. Components are colour-coded to differentiate between the two participants. </p>
                     <div class="row align-items-center justify-content-center">
                       <img class="center-block w100 " src="img/articles/frfeatures/h2h/s-51.png">
                     </div>
@@ -160,7 +168,7 @@
                 <div class="row justify-content-center align-items-center">
                   <div class="col-sm-12 col-md-12 col-lg-12 align-items-center">
                     <h1 class="section-title mb3 align-center center-block ">Watching a battle</h1>
-                    <p class="mw700 center-block align-just mt3 mb5 o70 align-just"> For a battle to be able to get published, the streak needs to have atleast 1 diss from each side. The validity of streak creation is <b>24 hours</b> and the participants can upload as many disses they want during this time. A color coded pagination is associated with a streak for easily relate with each participant. </p>
+                    <p class="mw700 center-block align-just mt3 mb5 o70 align-just"> A streak can be watched in different modes. By default disses play one after other automatically, but if the user wishes, they can manually watch any diss from the streak. In the fullscreen mode, different battles can be viewed by swiping up or down. </p>
                     <div class="row align-items-end justify-content-center">
                       <div class="col-sm-12 col-md-4 col-lg-4 ph3">
                         <video class="img-fluid w100 center-block" autoplay muted loop>
@@ -317,6 +325,12 @@
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+    <script>
+      // close overlay on click btn
+      $('#mboverlay').on('click', '#warningbtnprim', function () {
+        document.getElementById("mboverlay").style.display = "none";
+        });
+    </script>
   </body>
 </html>
 <style>

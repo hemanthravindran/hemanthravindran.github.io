@@ -23,6 +23,14 @@
     <link href="css/components.css" rel="stylesheet">
   </head>
   <body class="blackbg">
+                  <!-- mweb error overlay-->
+  <div id="mboverlay" class="">
+    <p class="center-block align-center mb0"> Hey there👋 </p>
+    <h1 class="center-block align-center mt2"><b>The site is not yet optimized for mobile devices</b></h1> 
+    <img class="center-block w80" src="img/mweb-error.svg" alt="">
+    <p class="align-center">Things might break sometimes. <br><b>Please do join through desktop web if possible.</b> Thanks! </p>
+    <btn class="primary" id="warningbtnprim">Continue anyway</btn>    
+  </div>
     <nav class="navbar navbar-light custom-navbar lv1 light">
       <div class="container">
         <div class="back-wrap">
@@ -44,11 +52,17 @@
             <div class="row justify-content-center">
               <div class="col-sm-12 col-md-12 col-lg-10" data-aos="fade-up">
                 <h2 class="text-header twhite">Virtual Piano</h2>
-                <div class="row justify-content-center">
-                  <h3 class="text-item-type-dark">UI</h3>
-                  <h3 class="text-item-type-dark">UX</h3>
-                  <h3 class="text-item-type-dark">Interactions</h3>
-                </div>
+                <div class="row justify-content-center story-details light">
+                  <div class="story-type">
+                    <p>UI</p>
+                    <p>•</p>
+                    <p>UX</p>
+                    <p>•</p>
+                    <p>Interactions</p>
+                  </div>
+                  <div class="story-year">
+                    <p>2022</p>
+                  </div>
                 <img class="center-block mt3 mb5 ph1 w80" src="img/articles/frtools/virtualpiano/banner-hero.png" />
                 <h3 class="align-center center-block mw800  o70 twhite"> The virtual piano is both a teaching aid for the instructor's, as well as a a practice tool for the students. It is integrated as a feature in the FrontRow live class environment. The instructor uses this tool to explain chords and melodies to the students, inside the live class in realtime. Also student's will be able to play the piano from their device. </h3>
               </div>
@@ -62,7 +76,7 @@
             <div class="col-sm-12 col-md-12 col-lg-12" data-aos="fade-up">
               <div class="section mt10" data-aos="fade-up">
                 <h1 class="section-title mb3"> Need of a tool </h1>
-                <p class="mw800 center-block align-center mt2 mb2 o70">Lack of a proper method for the instructors to visually explain the concepts of piano, and also to give feedback to the students of their performance </p>
+                <p class="mw800 center-block align-center mt2 mb2 o70">Lack of a proper method for the instructors to visually explain the concepts of piano, and also to give feedback to the students of their performance. </p>
                 <div class="row align-items-start justify-content-center mt2">
                   <div class="col-sm-4 col-md-4 col-lg-4 mt3 twhite justify-content-center">
                     <img class="center-block w60 mb2" src="img/articles/frtools/virtualpiano/s-11.png">
@@ -99,7 +113,7 @@
                   <div class="col-sm-12 col-md-4 col-lg-4 mt3 ph1">
                     <img class="center-block w50 mb2" src="img/articles/frtools/virtualpiano/s-32.svg">
                     <h3>Practice mode</h3>
-                    <p class="align-left o70 mt1">Once the intructor turns on the practice mode, the piano on all the students' devices will be enabled for the them to practice what has been taught. In this mode, the instructor won't be able to see or listen to the students' pianos. </p>
+                    <p class="align-left o70 mt1">Once the instructor turns on the practice mode, the piano on all the students' devices will be enabled for the them to practice what has been taught. In this mode, the instructor won't be able to see or listen to the students' pianos. </p>
                   </div>
                   <div class="col-sm-12 col-md-4 col-lg-4 mt3  ph1">
                     <img class="center-block w50 mb2" src="img/articles/frtools/virtualpiano/s-33.svg">
@@ -113,7 +127,7 @@
                 <div class="row align-items-center mb10">
                   <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left:3rem;">
                     <h3 class="align-left">Fullscreen and split screen views</h3>
-                    <p class="align-left o70">Fullscreen mode becomes helpful when the student wants to practice whta has been taught. Split screen view is more relevant when the instructor is explaining. </p>
+                    <p class="align-left o70">Fullscreen mode becomes helpful when the student wants to practice what has been taught. Split screen view is more relevant when the instructor is explaining. </p>
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-6">
                     <img class="mauto br10 ph1" src="img/articles/frtools/virtualpiano/s-41.png" />
@@ -127,7 +141,7 @@
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left:3rem;">
                     <h3 class="align-left">Custom sizes</h3>
-                    <p class="align-left o70">The intructor can choose the number of keys in the piano according to the lessons being taught. It reflects in the student's side also </p>
+                    <p class="align-left o70">The instructor can choose the number of keys in the piano according to the lessons being taught. It reflects in the student's side also. </p>
                   </div>
                 </div>
                 <div class="row align-items-center mb10">
@@ -153,7 +167,7 @@
                 <div class="row align-items-center mb10">
                   <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left:3rem;">
                     <h3 class="align-left">Sound sync</h3>
-                    <p class="align-left o70"> Piano sounds are generated at both intructor's and student's end individually and synchronously, rather than transmitting audio from one end to other. </p>
+                    <p class="align-left o70"> Piano sounds are generated at both instructor's and student's end individually and synchronously, rather than transmitting audio from one end to other. </p>
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-6">
                     <video class=" img-fluid center-block w90" autoplay muted loop>
@@ -249,5 +263,11 @@
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+    <script>
+      // close overlay on click btn
+      $('#mboverlay').on('click', '#warningbtnprim', function () {
+        document.getElementById("mboverlay").style.display = "none";
+        });
+    </script>
   </body>
 </html>

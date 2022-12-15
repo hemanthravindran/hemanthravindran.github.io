@@ -23,6 +23,14 @@
     <link href="css/components.css" rel="stylesheet">
   </head>
   <body>
+                  <!-- mweb error overlay-->
+  <div id="mboverlay" class="">
+    <p class="center-block align-center mb0"> Hey there👋 </p>
+    <h1 class="center-block align-center mt2"><b>The site is not yet optimized for mobile devices</b></h1> 
+    <img class="center-block w80" src="img/mweb-error.svg" alt="">
+    <p class="align-center">Things might break sometimes. <br><b>Please do join through desktop web if possible.</b> Thanks! </p>
+    <btn class="primary" id="warningbtnprim">Continue anyway</btn>    
+  </div>
     <nav class="navbar navbar-light custom-navbar lv1 dark">
       <div class="container">
         <div class="back-wrap">
@@ -72,25 +80,25 @@
               <div class="section mt5" data-aos="fade-up">
                 <h1 class="section-title">Setting Up The Visual Style</h1>
                 <div class="sub-section" data-aos="fade-up">
-                  <h2 class="section-title align-left">MatchMove's Brand Palette</h2>
+                  <h2 class="section-title align-center">MatchMove's Brand Palette</h2>
                   <img class="center-block" src="img/articles/matchmove/primpalette_1.png" />
                 </div>
                 <div class="sub-section" data-aos="fade-up">
-                  <h2 class="section-title align-left">Extended Palette For Visuals</h2>
-                  <p class="mb3 mw700 tgray">As per the requirements, the visuals need to be vibrant, unique and clean. The available brand palette won't suffice the need, as the 4 colours are a bit earthy and less exciting. To create vibrancy and contrast there is a need to introduce more colours that can be used subtly without deviating from the branding, yet giving some energy to the visuals. Based on this, 5 more colours and their tints has been introduced to the existing palette. </p>
+                  <h2 class="section-title align-center">Extended Palette For Visuals</h2>
+                  <p class="mb3 mw700 tgray center-block">As per the requirements, the visuals need to be vibrant, unique and clean. The available brand palette won't suffice the need, as the 4 colours are a bit earthy and less exciting. To create vibrancy and contrast there is a need to introduce more colours that can be used subtly without deviating from the branding, yet giving some energy to the visuals. Based on this, 5 more colours and their tints has been introduced to the existing palette. </p>
                   <img class="center-block" src="img/articles/matchmove/ext plt shades.png" />
                 </div>
                 <div class="sub-section" data-aos="fade-up">
-                  <h2 class="section-title align-left">Usage Proportions</h2>
-                  <p class="mb3 mw700 tgray">White has been chosen as the dominant colour to bring in simplicity and tidiness. Tints of yellow & red as secondary colours, so as to emphasise the brand presence .The additional colours are used in a minimal amount, so that there isn't much deviation from the brand palette. Even though the grey is from the brand palette, it has been suppressed largely to reduce dullness.  </p>
+                  <h2 class="section-title align-center">Usage Proportions</h2>
+                  <p class="mb3 mw700 tgray center-block">White has been chosen as the dominant colour to bring in simplicity and tidiness. Tints of yellow & red as secondary colours, so as to emphasise the brand presence. The additional colours are used in a minimal amount, so that there isn't much deviation from the brand palette. Even though the grey is from the brand palette, it has been suppressed largely to reduce dullness.  </p>
                   <img class="center-block" src="img/articles/matchmove/colorusage.png" />
                 </div>
                 <div class="sub-section" data-aos="fade-up">
-                  <h2 class="section-title align-left">Fills</h2>
+                  <h2 class="section-title align-center">Fills</h2>
                   <img class="center-block" src="img/articles/matchmove/texture and fill.png" />
                 </div>
                 <div class="sub-section" data-aos="fade-up">
-                  <h2 class="section-title align-left">Strokes</h2>
+                  <h2 class="section-title align-center">Strokes</h2>
                   <img class="center-block" src="img/articles/matchmove/strokes.png" />
                 </div>
               </div>
@@ -105,7 +113,7 @@
               </div>
               <div class="section mt5" data-aos="fade-up">
                 <h1 class="section-title mb3 mt5">Scenes In Motion.</h1>
-                <p class="align-center center-block mw700 tgray">All the header illustrations are animated to give some life to the scenes. These are 3-4 seconds long animations that loop seamlessly and infinitely.</p>
+                <p class="align-center center-block mw700 tgray">All the header illustrations are animated to give some life to the scenes. <br>These are 3-4 seconds long animations that loop seamlessly and infinitely.</p>
                 <div class="sub-section">
                   <div class="row align-items-center">
                     <div class="col-sm-12 col-md-6 col-lg-8">
@@ -315,5 +323,11 @@
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+    <script>
+      // close overlay on click btn
+      $('#mboverlay').on('click', '#warningbtnprim', function () {
+        document.getElementById("mboverlay").style.display = "none";
+        });
+    </script>
   </body>
 </html>

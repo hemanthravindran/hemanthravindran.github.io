@@ -421,7 +421,7 @@ carousel {
 
 .contact-items a:hover {
   border: 2px solid #ffffff80;
-    padding: 1rem 1.5rem 1rem 2.5rem;
+  padding: 1rem 1.5rem 1rem 2.5rem;
 }
 
 #mailmebtn {
@@ -572,9 +572,17 @@ carousel {
   transition: all .2s ease;
 
 }
+
 /* select 3rd child of final footer right container */
-.final-footer a:nth-child(3){background:white;color:black}
-.final-footer a:nth-child(3):hover{color:black;padding:4px 12px;}
+.final-footer a:nth-child(3) {
+  background: white;
+  color: black
+}
+
+.final-footer a:nth-child(3):hover {
+  color: black;
+  padding: 4px 12px;
+}
 
 .final-footer a:hover {
   color: #ffffff;
@@ -802,3 +810,48 @@ carousel {
   float: left;
   opacity: .5;
 }
+
+#btncontact {
+  background: black;
+  padding: 12px 16px;
+  display: block;
+  color: white;
+  border-radius: 30px;
+  text-align: center;
+  height: fit-content;
+  transition: .2s ease;
+}
+
+#btncontact:hover {
+  padding: 12px 24px
+}
+
+#mboverlay {
+  background: rgba(255, 255, 255, .97);
+  width: 100%;
+  position: fixed;
+  z-index: 300;
+  height: 100%;
+  padding: 2rem;
+}
+
+#mboverlay h1 {
+  line-height: 3.2rem;
+  font-size: 2.2rem;
+  color: black;
+}
+#mboverlay p{margin: 1rem 0 4rem;color:black;}
+#mboverlay btn.primary {
+  display: block;
+  width: 100%;
+  padding: 12px 12px;
+  /* background: #ff7575; */
+  border-radius: 12px;
+  text-align: center;
+  color: #ff7575;
+  border: 2px solid #ff7575;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#mboverlay btn.secondary {}
