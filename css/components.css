@@ -836,19 +836,20 @@ carousel {
 }
 
 #mboverlay h1 {
-  line-height: 3.2rem;
-  font-size: 2.2rem;
+  line-height: 2.9rem;
+  font-size: 2rem;
   color: black;
 }
+#mboverlay img{margin-bottom: 3rem;}
 #mboverlay p{margin: 1rem 0 4rem;color:black;}
 #mboverlay btn.primary {
   display: block;
   width: 100%;
   padding: 12px 12px;
-  /* background: #ff7575; */
+  background: #ff7575;
   border-radius: 12px;
   text-align: center;
-  color: #ff7575;
+  color: #ffffff;
   border: 2px solid #ff7575;
   font-size: 1.2rem;
   font-weight: 500;
