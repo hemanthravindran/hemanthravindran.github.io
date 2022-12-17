@@ -439,6 +439,13 @@ carousel {
   background-origin: content-box;
   background-size: 40px;
 }
+#dribbblebtn {
+  background-image: url(../img/btn-icn-dbl.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: content-box;
+  background-size: 40px;
+}
 
 #whatsappbtn {
   background-image: url(../img/btn-icn-wa.png);
@@ -574,12 +581,12 @@ carousel {
 }
 
 /* select 3rd child of final footer right container */
-.final-footer a:nth-child(3) {
+.final-footer a:nth-child(4) {
   background: white;
   color: black
 }
 
-.final-footer a:nth-child(3):hover {
+.final-footer a:nth-child(4):hover {
   color: black;
   padding: 4px 12px;
 }
