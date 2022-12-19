@@ -879,5 +879,11 @@ carousel {
   font-weight: 500;
 }
 
-/* #mboverlay btn.secondary {
-} */
+@-webkit-keyframes scrolldown {
+  0% { -webkit-transform: translateY(0); opacity: 0.2 }
+  100% { -webkit-transform: translateY(0.4em); opacity: 0.5 }
+}
+
+.scldwnarw {
+  -webkit-animation: scrolldown 0.5s infinite alternate ease-in-out;
+}
