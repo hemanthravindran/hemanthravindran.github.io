@@ -385,6 +385,15 @@ h3.section-title {
 .w30 {
   width: 30% !important;
 }
+.w20 {
+  width: 30% !important;
+}
+.w10 {
+  width: 30% !important;
+}
+.w05 {
+  width: 5% !important;
+}
 
 .mw800 {
   max-width: 800px !important;

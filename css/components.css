@@ -255,8 +255,8 @@ carousel {
   overflow: hidden;
 }
 
-.FRM-UImock .anim-wrap {
-}
+/* .FRM-UImock .anim-wrap {
+} */
 
 .story-details {
   margin-bottom: 5rem;
@@ -331,10 +331,6 @@ carousel {
   margin-top: 4px;
 }
 
-.sticky-shadow {
-  /* box-shadow: 0px 20px 70px rgb(0 0 0 / 10%); */
-}
-
 #btnabout {
   font-size: 1.2rem;
   font-weight: 500;
@@ -352,8 +348,8 @@ carousel {
   background-image: url(../img/handwave-white.gif);
 }
 
-#btnabout img {
-}
+/* #btnabout img {
+} */
 
 #btnabout:hover {
   border: 1px solid rgba(0, 0, 0, 1);
@@ -367,8 +363,8 @@ carousel {
   background-image: url(../img/handwave-white.gif);
 }
 
-#btnabout:hover img {
-}
+/* #btnabout:hover img {
+} */
 
 .stipple-sep {
   width: 214px;
@@ -454,15 +450,15 @@ carousel {
   background-size: 40px;
 }
 
-.morework-item {
-}
+/* .morework-item {
+} */
 
 .morework-item :hover .mw-img-wrap {
   transform: scale(0.95);
 }
 
-.morework-item a {
-}
+/* .morework-item a {
+} */
 
 .morework-item a p {
   margin-bottom: 0;
@@ -883,5 +879,5 @@ carousel {
   font-weight: 500;
 }
 
-#mboverlay btn.secondary {
-}
+/* #mboverlay btn.secondary {
+} */
