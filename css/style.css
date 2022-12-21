@@ -669,8 +669,8 @@ h3.section-title {
 
 .workcard-grid {
   border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0px -1px 1px rgba(255, 255, 255, 0.75);
+    overflow: hidden;
+    box-shadow: 0px -1px 1px rgb(255 255 255 / 35%);
 }
 
 .workcard-grid > div {
