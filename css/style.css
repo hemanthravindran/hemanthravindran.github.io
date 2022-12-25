@@ -189,7 +189,7 @@ p1 {
 }
 
 .pb0 {
-  padding-bottom: 0rem !important;
+  padding-bottom: 0 !important;
 }
 
 .pb2 {
@@ -209,8 +209,8 @@ p1 {
 }
 
 .pv0 {
-  padding-top: 0rem !important;
-  padding-bottom: 0rem !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .pv1 {
@@ -239,8 +239,8 @@ p1 {
 }
 
 .ph0 {
-  padding-left: 0rem !important;
-  padding-right: 0rem !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .ph1 {
@@ -269,7 +269,7 @@ p1 {
 }
 
 .pt0 {
-  padding-top: 0rem !important;
+  padding-top: 0 !important;
 }
 
 .pt2 {
@@ -442,7 +442,7 @@ p1 {
   width: 100%;
   /*max-width:700px;*/
   margin: 0 auto;
-  position: ralative;
+  position: relative;
   display: block;
 }
 
