@@ -164,6 +164,9 @@ p1 {
   width: auto !important;
 }
 
+.br0 {
+  border-radius: 0;
+}
 .br1 {
   border-radius: 1rem;
 }
@@ -549,6 +552,10 @@ h3.section-title {
   font-size: 1.2rem !important;
 }
 
+.fs3 {font-size: 3rem !important}
+.fs4 {font-size: 4rem !important}
+.fs5 {font-size: 5rem !important}
+
 .header-tab {
   margin: auto;
   padding-right: 68px;
@@ -595,13 +602,13 @@ h3.section-title {
 }
 
 .filters > a {
-  color: #8f8f8f;
+  color: #222222;
   display: inline-block;
   padding: 4px 16px;
   position: relative;
   transition: 0.3s ease;
   border-radius: 16px;
-  font-size: 13px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -610,14 +617,15 @@ h3.section-title {
 .filters > a:active {
   text-decoration: none;
   color: white;
-  background: #ffffff30;
+  background: #00000070;
 }
 
 .filters > a.active {
-  color: #000000;
-  background: #ffffff;
-  /* border: 1px solid white; */
-  font-weight: 500;
+      color: #ffffff;
+    background: #000000;
+    /* border: 1px solid white; */
+    font-weight: 500;
+}
 }
 
 #sorting {
@@ -629,23 +637,23 @@ h3.section-title {
 #sorting a:active {
   text-decoration: none;
   color: white;
-  background: #ffffff30;
+  background: #00000070;
 }
 
 #sorting a {
-  color: #8f8f8f;
+  color: #222222;
   display: inline-block;
   padding: 4px 16px;
   position: relative;
   transition: 0.3s ease;
   border-radius: 16px;
-  font-size: 13px;
+  font-size: 14px;
   cursor: pointer;
 }
 
 #sorting a.active {
-  color: black;
-  background: white;
+  color: white;
+  background: black;
 }
 
 .tool-list-item div.row {
@@ -720,6 +728,14 @@ h3.section-title {
   position: relative;
   text-align: center;
   color: #000;
+  letter-spacing: 0em;
+  transition: all .3s ease; 
+}
+
+.item .item-wrap:hover p {
+ letter-spacing: .075em;
+ transition: all .3s ease; 
+ font-weight: 500;
 }
 
 .item .item-wrap p.item-title {

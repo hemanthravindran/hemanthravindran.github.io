@@ -315,12 +315,14 @@ carousel {
 }
 
 #sortnfilter-wrap {
-  background: black;
-  position: fixed;
-  top: -72px;
-  padding: 16px 0;
-  z-index: 100;
-  transition: top 0.4s ease;
+  background: #eff1e4f0;
+    position: sticky;
+    top: 10px;
+    padding: 16px 0;
+    border: 1px solid #e3e3cb;
+    border-radius: 16px;
+    z-index: 100;
+    transition: top 0.4s ease;
 }
 
 #sortnfilter-wrap img {
@@ -646,7 +648,7 @@ carousel {
 
 .r_ilns .frame {
   background: white;
-  padding: 15px 15px 35px;
+  padding: 15px 15px 25px;
   margin-bottom: 25px;
   box-shadow: 0px 5px 5px rgb(0 0 0 / 10%);
   box-shadow: 0px 10px 21px #00000010;
@@ -887,3 +889,21 @@ carousel {
 .scldwnarw {
   -webkit-animation: scrolldown 0.5s infinite alternate ease-in-out;
 }
+
+a.cta-redirect{padding: 0.75rem 2rem;
+    /* border: 1px solid #ffffff50; */
+    background: #5d5dd4;
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+    width: auto;
+    margin: auto 0;
+    display: inline-block;}
+
+.stickyhead{
+  position: sticky;
+z-index:10000}
+
+
+
+
