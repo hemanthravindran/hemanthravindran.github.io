@@ -1,0 +1,15 @@
+<svg width="1952" height="192" viewBox="0 0 1952 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="1951" height="191" rx="23.5" stroke="#3F485A"/>
+<rect width="128" height="128" rx="40" transform="matrix(-1 0 0 1 1920 32)" fill="#6E7C8E"/>
+<rect width="128" height="128" rx="40" transform="matrix(-1 0 0 1 1760 32)" fill="#96A4B6"/>
+<rect width="128" height="128" rx="40" transform="matrix(-1 0 0 1 1600 32)" fill="#C7D2E0"/>
+<rect width="128" height="128" rx="40" transform="matrix(-1 0 0 1 1440 32)" fill="#E2E8F0"/>
+<rect width="128" height="128" rx="40" transform="matrix(-1 0 0 1 1280 32)" fill="#EDF2F7"/>
+<rect width="128" height="128" rx="40" transform="matrix(-1 0 0 1 1120 32)" fill="#F7FAFC"/>
+<rect x="832" y="32" width="128" height="128" rx="40" fill="#5E697C"/>
+<rect x="672" y="32" width="128" height="128" rx="40" fill="#4A5568"/>
+<rect x="512" y="32" width="128" height="128" rx="40" fill="#2D3748"/>
+<rect x="352" y="32" width="128" height="128" rx="40" fill="#1A202C"/>
+<rect x="192" y="32" width="128" height="128" rx="40" fill="#1B1E2D"/>
+<rect x="32.5" y="32.5" width="127" height="127" rx="39.5" fill="#0A0A19" stroke="#3C3C3C"/>
+</svg>
