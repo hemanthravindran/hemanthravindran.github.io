@@ -315,14 +315,15 @@ carousel {
 }
 
 #sortnfilter-wrap {
-  background: #eff1e4f0;
-    position: sticky;
-    top: 10px;
-    padding: 16px 0;
-    border: 1px solid #e3e3cb;
-    border-radius: 16px;
-    z-index: 100;
-    transition: top 0.4s ease;
+  position: sticky;
+  top: 24px;
+  z-index: 100;
+  transition: top 0.4s ease;
+  backdrop-filter: blur(6px);
+  padding: 8px 8px;
+  border-radius: 24px;
+  border: 1px solid #f3f3f3;
+  background: #ffffffbf;
 }
 
 #sortnfilter-wrap img {
@@ -408,7 +409,7 @@ carousel {
   color: white;
   /* background: black; */
   font-size: 1.3rem;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 1rem;
   border: 2px solid #ffffff30;
   border-radius: 12px;
   margin-bottom: 1.5rem;
@@ -418,7 +419,7 @@ carousel {
 
 .contact-items a:hover {
   border: 2px solid #ffffff80;
-  padding: 1rem 1.5rem 1rem 2.5rem;
+  padding: 1rem 1.3rem;
 }
 
 #mailmebtn {
@@ -444,8 +445,8 @@ carousel {
   background-size: 40px;
 }
 
-#whatsappbtn {
-  background-image: url(../img/btn-icn-wa.png);
+#resumebtn {
+  background-image: url(../img/btn-icn-res.png);
   background-repeat: no-repeat;
   background-position: right;
   background-origin: content-box;
@@ -480,6 +481,7 @@ carousel {
   background-position: center;
   transition: 0.2s ease;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .morework-item .mw-img-wrap video {
@@ -527,7 +529,7 @@ carousel {
 }
 
 #mwitem11 {
-  background-image: url("../img/covers/personalart.png");
+  background-image: url("../img/articles/illustrations/ill11.png");
 }
 
 #mwitem12 {
@@ -648,7 +650,7 @@ carousel {
 
 .r_ilns .frame {
   background: white;
-  padding: 15px 15px 25px;
+  padding: 15px 15px 40px;
   margin-bottom: 25px;
   box-shadow: 0px 5px 5px rgb(0 0 0 / 10%);
   box-shadow: 0px 10px 21px #00000010;
@@ -848,7 +850,7 @@ carousel {
 }
 
 #mboverlay {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.97);
   width: 100%;
   position: fixed;
   z-index: 300;
@@ -880,6 +882,8 @@ carousel {
   font-size: 1.2rem;
   font-weight: 500;
 }
+
+
 
 @-webkit-keyframes scrolldown {
   0% { -webkit-transform: translateY(0); opacity: 0.2 }

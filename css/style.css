@@ -9,70 +9,66 @@
 }
 
 @font-face {
-  font-family: "GT Walsheim Pro";
-  src: url("../fonts/GTWalsheimPro-Thin.woff2") format("woff2"),
-    url("../fonts/GTWalsheimPro-Thin.woff") format("woff"),
-    url("../fonts/GTWalsheimPro-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+  font-family: Heuvel Grotesk DEMO;
+  src: url(../fonts/Heuvel_Light.ttf);
+  font-weight: 300;
 }
-
 @font-face {
-  font-family: "GT Walsheim Pro";
-  src: url("../fonts/GTWalsheimPro-Light.woff2") format("woff2"),
-    url("../fonts/GTWalsheimPro-Light.woff") format("woff"),
-    url("../fonts/GTWalsheimPro-Light.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "GT Walsheim Pro";
-  src: url("../fonts/GTWalsheimPro-Regular.woff2") format("woff2"),
-    url("../fonts/GTWalsheimPro-Regular.woff") format("woff"),
-    url("../fonts/GTWalsheimPro-Regular.ttf") format("truetype");
+  font-family: Heuvel Grotesk DEMO;
+  src: url(../fonts/Heuvel_Regular.ttf);
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
 }
-
 @font-face {
-  font-family: "GT Walsheim Pro";
-  src: url("../fonts/GTWalsheimPro-Medium.woff2") format("woff2"),
-    url("../fonts/GTWalsheimPro-Medium.woff") format("woff"),
-    url("../fonts/GTWalsheimPro-Medium.ttf") format("truetype");
+  font-family: Heuvel Grotesk DEMO;
+  src: url(../fonts/Heuvel_Medium.ttf);
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
 }
-
 @font-face {
-  font-family: "GT Walsheim Pro";
-  src: url("../fonts/GTWalsheimPro-Bold.woff2") format("woff2"),
-    url("../fonts/GTWalsheimPro-Bold.woff") format("woff"),
-    url("../fonts/GTWalsheimPro-Bold.ttf") format("truetype");
+  font-family: Heuvel Grotesk DEMO;
+  src: url(../fonts/Heuvel_SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Heuvel Grotesk DEMO;
+  src: url(../fonts/Heuvel_ExtraBold.ttf);
   font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+}
+@font-face {
+  font-family: Heuvel Grotesk DEMO;
+  src: url(../fonts/Heuvel_Black.ttf);
+  font-weight: 800;
 }
 
-@font-face {
-  font-family: "GT Walsheim Pro";
-  src: url("../fonts/GTWalsheimPro-Black.woff2") format("woff2"),
-    url("../fonts/GTWalsheimPro-Black.woff") format("woff"),
-    url("../fonts/GTWalsheimPro-Black.ttf") format("truetype");
-  font-weight: 800;
+
+
+
+
+
+
+#contactfab{padding: 1rem 1.25rem;position: fixed;right: 5%;bottom:10%;background: #424d78;color: white;border-radius: 30px;z-index: 10000;}
+.contact-fab a{
+    color: white;
+    font-weight: 600;
+}
+
+.inside-nav{position: relative !important;z-index: auto !important;margin-bottom:0 !important;padding: 30px}
+.plus-jakarta-sans-<uniquifier> {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
   font-style: normal;
-  font-display: swap;
 }
 
 body {
-  font-family: "GT Walsheim Pro", "Poppins", sans-serif;
+  font-family: "Plus Jakarta Sans", "Poppins", sans-serif;
   color: #0d1e2d;
   font-weight: normal;
 }
+
+@font-face{}
+
+.f-display{font-family: "Heuvel Grotesk DEMO","Heuvel Grotesk Demo", serif;}
+.f-jakarta {font-family: "Jakarta Sans", sans-serif;}
 
 a {
   display: block;
@@ -94,6 +90,7 @@ h4,
 h5,
 h6 {
   text-align: center;
+    font-weight: 600;
 }
 
 p {
@@ -497,11 +494,11 @@ a.sub-section,
   width: 100%;
   /*display: block;*/
   /*float: left;*/
-  font-size: 1.1rem;
-  /* font-weight: normal;*/
-  line-height: 1.8;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.7;
   text-align: left;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.015rem;
 }
 
 .text-item-type {
@@ -511,19 +508,28 @@ a.sub-section,
   color: #999;
   margin-bottom: 4rem;
 }
+.intro-title p{font-size: 1.75rem}
+.intro-title h1{
+  font-family: "Heuvel Grotesk DEMO","Heuvel Grotesk Demo";
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.3;
+  }
+ .hero-subtag span{font-size: 1rem;}
 
 h2.section-title {
-  /* font-family: "GT Walsheim Pro", sans-serif; */
-  font-size: 2rem;
-  margin: 0 0 5rem 0;
-  font-weight: 500;
+  font-family: "figtree", sans-serif;
+  font-size: 2.2rem;
+  margin: 0 0 4rem 0;
+  font-weight: 700;
+  /* letter-spacing: .02rem; */
 }
 
 h1.section-title {
   /* font-family: "GT Walsheim Pro", sans-serif; */
   font-size: 2rem;
-  margin: 0 0 7rem 0;
-  font-weight: 500;
+  margin: 0 0 4rem 0;
+  font-weight: 700;
   line-height: 1.5;
 }
 
@@ -594,7 +600,7 @@ h3.section-title {
 }
 
 #portfolio-grid {
-  margin-top: 9rem;
+  margin-top: 5rem;
 }
 
 #filters {
@@ -602,13 +608,13 @@ h3.section-title {
 }
 
 .filters > a {
-  color: #222222;
+  color: #424d78;
   display: inline-block;
-  padding: 4px 16px;
+  padding: 4px 12px;
   position: relative;
   transition: 0.3s ease;
   border-radius: 16px;
-  font-size: 16px;
+  font-size: .875rem;
   cursor: pointer;
 }
 
@@ -616,8 +622,8 @@ h3.section-title {
 .filters > a:focus,
 .filters > a:active {
   text-decoration: none;
-  color: white;
-  background: #00000070;
+  color: #424d78;
+  background: #00000014;
 }
 
 .filters > a.active {
@@ -636,18 +642,18 @@ h3.section-title {
 #sorting a:focus,
 #sorting a:active {
   text-decoration: none;
-  color: white;
-  background: #00000070;
+  color: #424d78;
+  background: #00000014;
 }
 
 #sorting a {
-  color: #222222;
+  color: #424d78;
   display: inline-block;
-  padding: 4px 16px;
+  padding: 4px 12px;
   position: relative;
   transition: 0.3s ease;
   border-radius: 16px;
-  font-size: 14px;
+  font-size: .875rem;
   cursor: pointer;
 }
 
@@ -701,6 +707,8 @@ h3.section-title {
   padding-right: 20px;
 }
 
+.morework-item .item-wrap:hover{background:none;}
+
 .item .item-wrap:after {
   z-index: 2;
   position: absolute;
@@ -733,7 +741,7 @@ h3.section-title {
 }
 
 .item .item-wrap:hover p {
- letter-spacing: .075em;
+ letter-spacing: .025em;
  transition: all .3s ease; 
  font-weight: 500;
 }
@@ -742,6 +750,7 @@ h3.section-title {
   font-size: 1.1rem;
   color: black;
   margin-top: 1.4rem;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
@@ -1175,6 +1184,9 @@ video {
 .custom-navbar {
   padding-top: 30px;
   width: 100%;
+  margin-bottom: -120px;
+  position: fixed;
+    z-index: 10000;
 }
 
 .custom-navbar div.back-wrap {
@@ -1221,6 +1233,26 @@ video {
 .footer {
   padding: 0;
 }
+
+.nav-links-wrap{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    }
+
+.nav-links-wrap a{
+    color: #424d78;
+    padding: 4px 12px;
+    border-radius: 16px;
+    background: none;
+    transition: all .3s ease;
+}
+.nav-links-wrap a.active{background: white;font-weight: 600}
+
+.nav-links-wrap a:hover{background:white}
+
+.top-nav{backdrop-filter: blur(6px);padding: 4px 24px;border-radius: 24px;border: 1px solid #FFF;background: rgb(253,243,254,.7);box-shadow: 0px 28px 36px 0px rgba(191, 188, 247, 0.30), 8px 4px 12px 0px rgba(255, 255, 255, 0.25) inset;}
+
 
 .footer a {
   color: #000;
