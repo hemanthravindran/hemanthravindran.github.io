@@ -39,6 +39,7 @@
   font-weight: 800;
 }
 
+a.back-btn{cursor: pointer;}
 
 
 
@@ -1238,6 +1239,7 @@ video {
     display: flex;
     justify-content: right;
     gap: 10px;
+    margin-top: -4px;
     }
 
 .nav-links-wrap a{
@@ -1251,8 +1253,8 @@ video {
 
 .nav-links-wrap a:hover{background:white}
 
-.top-nav{backdrop-filter: blur(6px);padding: 4px 24px;border-radius: 24px;border: 1px solid #FFF;background: rgb(253,243,254,.7);box-shadow: 0px 28px 36px 0px rgba(191, 188, 247, 0.30), 8px 4px 12px 0px rgba(255, 255, 255, 0.25) inset;}
-
+.top-nav{backdrop-filter: blur(6px);padding: 4px 24px 0;border-radius: 24px;border: 1px solid #FFF;background: rgb(253,243,254,.7);box-shadow: 0px 28px 36px 0px rgba(191, 188, 247, 0.30), 8px 4px 12px 0px rgba(255, 255, 255, 0.25) inset;height: 64px;}
+.navbar-brand{padding-bottom:0 !important;margin-bottom: -8px;}
 
 .footer a {
   color: #000;
