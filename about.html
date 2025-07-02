@@ -32,13 +32,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 </head>
 
 <body style="background:#ffffff;">
 
   <nav class="navbar navbar-light custom-navbar" style="position: relative !important;">
     <div class="container top-nav">
-      <a class="navbar-brand" href="home.html"><img src="img/stipple-logo.svg" style="width:102px" alt="hemanth ravindran"></a>
+      
+       <a class="navbar-brand" href="home.html">
+        <lottie-player id="homeicon" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Homeicon.json" style="width:100%; ">          
+        </lottie-player>        
+      </a>
+
       <div class="nav-links-wrap">
         <a href="allworks.html" >projects</a>
         <a href="shots.html">snippets</a>
@@ -397,6 +404,17 @@ background: linear-gradient(90deg, #FAECDD 0%, #D7E6FB 100%);
     document.getElementById("mboverlay").style.display = "none";
   });
 
+</script>
+<script>
+LottieInteractivity.create({
+    player:'#homeicon',
+    mode:"cursor",
+    actions: [
+        {
+            type: "hold"
+        }
+    ]
+});
 </script>
 </body>
 

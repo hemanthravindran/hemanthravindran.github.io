@@ -34,6 +34,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 </head>
 
 <body style="background:#ffffff;">
@@ -41,7 +42,12 @@
 
   <nav class="navbar navbar-light custom-navbar" style="position: relative !important;">
     <div class="container top-nav">
-      <a class="navbar-brand" href="home.html"><img src="img/stipple-logo.svg" style="width:102px" alt="hemanth ravindran"></a>
+      
+       <a class="navbar-brand" href="home.html">
+        <lottie-player id="homeicon" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Homeicon.json" style="width:100%; ">          
+        </lottie-player>        
+      </a>
+
       <div class="nav-links-wrap">
         <a href="allworks.html" >projects</a>
         <a href="shots.html" class="active">snippets</a>
@@ -179,7 +185,7 @@
           <p class="desc" style="color:#424D78; Opacity:.5"> CoinSwitch / 2023</p>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-12 mt2 mb-12 mb-lg-12 ph0">
-         <img class="img-fluid w100" src="img/articles/playground/cscalc.svg">
+         <img class="img-fluid w100" src="img/articles/playground/CScalc.svg">
        </div> 
 
      </div>
@@ -284,7 +290,7 @@
     <div class="container-fluid pv5" style="background: #f8f8f8;">
       <div class="container "> 
         <div class="header">
-          <h1 class="title" style="color:#424D78;"> Concepts </h1>
+          <h1 class="title" style="color:#424D78;"> Seasonal Banners </h1>
           <p class="desc" style="color:#424D78; Opacity:.5"> Cleartax / 2017</p>
         </div>
         <div class="row">
@@ -389,39 +395,17 @@
 <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 
+
 <script>
-  var $grid = $('.portfolio-grid').isotope({
-    itemSelector: '.item',
-    layoutMode: 'masonry',
-    getSortData: {
-      sdate: '.sdate parseInt',
-      sbest: '.sbest parseInt',
-    }
-  });
-// bind sort button click
-  $('.sorting').on('click', 'a', function () {
-    var sortValue = $(this).attr('data-sort-value');
-    console.log('sortValue', sortValue)
-    $grid.isotope({
-      sortBy: sortValue
-    });
-  });
-// change is-checked class on buttons
-  $('.sorting').each(function (i, sorting) {
-    var $sorting = $(sorting);
-    $sorting.on('click', 'a', function () {
-      $sorting.find('.active').removeClass('active');
-      $(this).addClass('active');
-    });
-  });
-
-
-
-// close overlay on click btn
-  $('#mboverlay').on('click', '#warningbtnprim', function () {
-    document.getElementById("mboverlay").style.display = "none";
-  });
-
+LottieInteractivity.create({
+    player:'#homeicon',
+    mode:"cursor",
+    actions: [
+        {
+            type: "hold"
+        }
+    ]
+});
 </script>
 </body>
 
