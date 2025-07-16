@@ -66,9 +66,9 @@
   </nav>
 
 
-  <main id="main">
+  <main id="main" >
 
-    <div class="site-section site-portfolio pt0 pb-5 mb-6">
+    <div class="site-section site-portfolio pt0 pb-5 mb-6" id="homescrollmap">
       <div class="container-fluid" style="background: linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(63.41% 85.57% at 75.96% 0%, #9BF6FF 0%, rgba(155, 246, 255, 0.00) 100%), radial-gradient(86.36% 43.75% at 19.05% 0%, rgba(202, 255, 191, 0.60) 0%, rgba(202, 255, 191, 0.00) 100%), #FFF; padding-top:8rem;" >
         <div class="container">
 
@@ -597,6 +597,25 @@ LottieInteractivity.create({
             type: "hold"
         }
     ]
+});
+</script>
+
+<script>
+  let player = document.getElementById("homeicon");
+
+player.addEventListener("ready", () => {
+  LottieInteractivity.create({
+        mode:"scroll",
+        player: "#homeicon",
+        container: "#homescrollmap",
+        actions: [
+        {
+            visibility:[.3, 1.0],
+            type: "seek",
+            frames: [0, 30],
+        },
+        ]
+      });
 });
 </script>
 
