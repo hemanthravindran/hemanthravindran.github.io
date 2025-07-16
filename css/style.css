@@ -642,6 +642,8 @@ h3.section-title {
   text-decoration: none;
   color: #424d78;
   background: #00000014;
+4px: 1;
+  padding: 4px 20px;
 }
 
 .filters > a.active {
@@ -662,6 +664,7 @@ h3.section-title {
   text-decoration: none;
   color: #424d78;
   background: #00000014;
+  padding: 4px 20px;
 }
 
 #sorting a {
@@ -1268,7 +1271,7 @@ video {
 }
 .nav-links-wrap a.active{background: white;font-weight: 600}
 
-.nav-links-wrap a:hover{background:white}
+.nav-links-wrap a:hover{background:white;transform: scale(1.1);}
 
 .top-nav{backdrop-filter: blur(6px);padding: 4px 24px 0;border-radius: 24px;border: 1px solid #FFF;background: rgb(253,243,254,.7);box-shadow: 0px 28px 36px 0px rgba(191, 188, 247, 0.30), 8px 4px 12px 0px rgba(255, 255, 255, 0.25) inset;height: 64px;}
 .navbar-brand{padding-bottom:0 !important;margin-bottom: -8px;}
