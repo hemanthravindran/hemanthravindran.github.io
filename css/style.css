@@ -1224,6 +1224,8 @@ video {
   padding: 4px;
   border-radius: 30px;
   transition: all 0.2s ease;
+  height: 52px;
+  width: 52px;
 }
 
 .custom-navbar.dark div.back-wrap a.back-btn {
