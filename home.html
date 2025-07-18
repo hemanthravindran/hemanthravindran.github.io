@@ -117,7 +117,9 @@
         </div>
       </div>
     </div>
-    <div class="container">
+
+
+    <div class="container"  id="skillscrollmap">
 
       <div class="row align-items-center mt3 mb5"  data-aos="fade-up"> <!--skillset -->
 
@@ -131,23 +133,23 @@
     box-shadow: 0 -52px 86px 0px rgba(210, 197, 244, 0.20), 8px 4px 12px 0px rgba(255, 255, 255, 0.25) inset;">
 
         <div class="skill-wrap">
-          <img class="center-block" src="img/skill01.svg">
+          <lottie-player id="skill1" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/UX.json" background="transparent" speed="1"></lottie-player>
           <p class="text-center"> UX Design</p>
         </div>
         <div class="skill-wrap">
-          <img class="center-block "src="img/skill02.svg">
+          <lottie-player id="skill2" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Motion.json" background="transparent" speed="1" ></lottie-player>
           <p class="text-center"> Motion Design</p>
         </div>
         <div class="skill-wrap">
-         <img class="center-block" src="img/skill03.svg">
+         <lottie-player id="skill3" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Visual.json" background="transparent" speed="1" ></lottie-player>
          <p class="text-center"> Visual Design</p>
        </div>
        <div class="skill-wrap">
-        <img class="center-block" src="img/skill04.svg">
+      <lottie-player id="skill4" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Systems.json" background="transparent" speed="1" ></lottie-player>
         <p class="text-center"> Systems</p>
       </div>
       <div class="skill-wrap">
-        <img class="center-block" src="img/skill05.svg">
+       <lottie-player id="skill5" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Prototyping.json" background="transparent" speed="1" ></lottie-player>
         <p class="text-center"> Prototyping</p>
       </div>
       <div class="skill-wrap">
@@ -155,7 +157,7 @@
        <p class="text-center"> Illustration</p>
      </div>     
      <div class="skill-wrap">
-       <img class="center-block" src="img/skill07.svg">
+       <lottie-player id="skill7" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Branding.json" background="transparent" speed="1" ></lottie-player>
        <p class="text-center"> Branding</p>
      </div>
 
@@ -429,7 +431,7 @@
   }
 
   .skill-wrap{width:fit-content;}
-  .skill-wrap img{width:48px;margin-bottom:1rem}
+  .skill-wrap img, lottie-player {width:48px; margin:0 auto 1rem !important;position:relative;display:block;height:48px;width:48px;}
   .skill-wrap p{color:#64648E}
   .mystack-pill{border-radius: 32px;
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -617,6 +619,101 @@ player.addEventListener("ready", () => {
       });
 });
 </script>
+
+<script>
+  LottieInteractivity.create({
+    player: "#skill1",
+        mode:"cursor", 
+        actions: [
+        {
+            type: "hover",
+            forceFlag: false,
+        },
+        ]
+      });
+</script>
+
+<script>
+  LottieInteractivity.create({
+    player: "#skill2",
+        mode:"cursor", 
+        actions: [
+        {
+            type: "hover",
+            forceFlag: false,
+        },
+        ]
+      });
+</script>
+
+<script>
+  LottieInteractivity.create({
+    player: "#skill3",
+        mode:"cursor", 
+        actions: [
+        {
+            type: "hover",
+            forceFlag: false,
+        },
+        ]
+      });
+</script>
+
+<script>
+  LottieInteractivity.create({
+    player: "#skill4",
+        mode:"cursor", 
+        actions: [
+        {
+            type: "hover",
+            forceFlag: false,
+        },
+        ]
+      });
+</script>
+
+<script>
+  LottieInteractivity.create({
+    player: "#skill5",
+        mode:"cursor", 
+        actions: [
+        {
+            type: "hover",
+            forceFlag: false,
+        },
+        ]
+      });
+</script>
+
+<script>
+  LottieInteractivity.create({
+    player: "#skill6",
+        mode:"cursor", 
+        actions: [
+        {
+            type: "hover",
+            forceFlag: false,
+        },
+        ]
+      });
+</script>
+<script>
+  LottieInteractivity.create({
+    player: "#skill7",
+        mode:"cursor", 
+        actions: [
+        {
+            type: "hover",
+            forceFlag: false,
+        },
+        ]
+      });
+</script>
+
+
+
+
+
 
 
 
