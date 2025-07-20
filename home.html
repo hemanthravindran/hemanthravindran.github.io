@@ -126,37 +126,37 @@
         <div class="center-block mystack-pill f-jakarta">My Stack</div>
         <div style="    display: flex;
     width: 100%;
-    padding: 40px 24px 24px 24px;
+    padding: 0 24px 24px 24px;
     justify-content: space-around;
     border-radius: 24px;
     background: rgba(255, 255, 255, 0.60);
     box-shadow: 0 -52px 86px 0px rgba(210, 197, 244, 0.20), 8px 4px 12px 0px rgba(255, 255, 255, 0.25) inset;">
 
-        <div class="skill-wrap">
-          <lottie-player id="skill1" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/UX.json" background="transparent" speed="1"></lottie-player>
+        <div class="skill-wrap" id="skillwrap1">
+          <lottie-player autoplay id="skill1" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/UX.json" background="transparent" speed="1"></lottie-player>
           <p class="text-center"> UX Design</p>
         </div>
-        <div class="skill-wrap">
+        <div class="skill-wrap" id="skillwrap2">
           <lottie-player id="skill2" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Motion.json" background="transparent" speed="1" ></lottie-player>
           <p class="text-center"> Motion Design</p>
         </div>
-        <div class="skill-wrap">
+        <div class="skill-wrap" id="skillwrap3">
          <lottie-player id="skill3" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Visual.json" background="transparent" speed="1" ></lottie-player>
          <p class="text-center"> Visual Design</p>
        </div>
-       <div class="skill-wrap">
+       <div class="skill-wrap" id="skillwrap4">
       <lottie-player id="skill4" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Systems.json" background="transparent" speed="1" ></lottie-player>
         <p class="text-center"> Systems</p>
       </div>
-      <div class="skill-wrap">
+      <div class="skill-wrap" id="skillwrap5">
        <lottie-player id="skill5" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Prototyping.json" background="transparent" speed="1" ></lottie-player>
         <p class="text-center"> Prototyping</p>
       </div>
-      <div class="skill-wrap">
-       <img class="center-block" src="img/skill06.svg">
+      <div class="skill-wrap" id="skillwrap6">
+       <lottie-player id="skill6" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Illustration.json" background="transparent" speed="1" ></lottie-player>
        <p class="text-center"> Illustration</p>
      </div>     
-     <div class="skill-wrap">
+     <div class="skill-wrap" id="skillwrap7">
        <lottie-player id="skill7" src="https://raw.githubusercontent.com/hemanthravindran/hemanthravindran.github.io/main/img/Branding.json" background="transparent" speed="1" ></lottie-player>
        <p class="text-center"> Branding</p>
      </div>
@@ -430,8 +430,8 @@
     }
   }
 
-  .skill-wrap{width:fit-content;}
-  .skill-wrap img, .skill-wrap lottie-player {width:48px; margin:0 auto 1rem !important;position:relative;display:block;height:48px;width:48px;}
+  .skill-wrap{width:fit-content;padding-top: 3rem;}
+  .skill-wrap img, .skill-wrap lottie-player {width:48px; margin:0 auto 1rem !important;position:relative;display:block;height:56px;width:56px;}
   .skill-wrap p{color:#64648E}
   .mystack-pill{border-radius: 32px;
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -589,7 +589,7 @@
 <script src="js/main.js"></script>
 
 
-<script>
+<script> /*Home icon trigger*/
 LottieInteractivity.create({
     player:'#homeicon',
     mode:"cursor",
@@ -599,10 +599,7 @@ LottieInteractivity.create({
         }
     ]
 });
-</script>
-
-<script>
-  let player = document.getElementById("homeicon");
+let player = document.getElementById("homeicon");
 
 player.addEventListener("ready", () => {
   LottieInteractivity.create({
@@ -615,121 +612,222 @@ player.addEventListener("ready", () => {
             type: "seek",
             frames: [0, 30],
         },
+
         ]
       });
 });
+  
 </script>
 
-<script>
+<script>  /*stack icons triggers*/
+
   LottieInteractivity.create({
     player: "#skill1",
-        mode:"cursor", 
-        actions: [
-        {
-            type: "hover",
-            forceFlag: false,
-        },
-        ]
-      });
-</script>
+    mode:"scroll",
+    container: "#skillscrollmap",
+    actions: [
+      {
+        visibility: [.2, .7],
+        type: 'play',
+        delay:0,
+        frames: [0, 60],
+      },
 
-<script>
+    ]
+  });
+
+  LottieInteractivity.create({
+    player: "#skill1",
+    mode:"cursor",
+    container: "#skillwrap1",
+    
+    actions: [
+      { 
+        type: 'hover',   
+      },
+
+    ]
+  });
+
   LottieInteractivity.create({
     player: "#skill2",
-        mode:"cursor", 
-        actions: [
-        {
-            type: "hover",
-            forceFlag: false,
-        },
-        ]
-      });
-</script>
+    mode:"scroll",
+    container: "#skillscrollmap",
+    actions: [
+      {
+        visibility: [.2, .7],
+        type: 'play',
+        delay:100,
+        frames: [0, 60],
+      },
 
-<script>
+    ]
+  });
+
+  LottieInteractivity.create({
+    player: "#skill2",
+    mode:"cursor",
+    container: "#skillwrap2",
+    
+    actions: [
+      { 
+        type: 'hover',   
+      },
+
+    ]
+  });
+
   LottieInteractivity.create({
     player: "#skill3",
-        mode:"cursor", 
-        actions: [
-        {
-            type: "hover",
-            forceFlag: false,
-        },
-        ]
-      });
-</script>
+    mode:"scroll",
+    container: "#skillscrollmap",
+    actions: [
+      {
+        visibility: [.2, .7],
+        type: 'play',
+        delay:200,
+        frames: [0, 60],
+      },
 
-<script>
+    ]
+  });
+
+  LottieInteractivity.create({
+    player: "#skill3",
+    mode:"cursor",
+    container: "#skillwrap3",
+    
+    actions: [
+      { 
+        type: 'hover',   
+      },
+
+    ]
+  });
+
   LottieInteractivity.create({
     player: "#skill4",
-        mode:"cursor", 
-        actions: [
-        {
-            type: "hover",
-            forceFlag: false,
-        },
-        ]
-      });
-</script>
+    mode:"scroll",
+    container: "#skillscrollmap",
+    actions: [
+      {
+        visibility: [.2, .7],
+        type: 'play',
+        delay:300,
+        frames: [0, 60],
+      },
 
-<script>
+    ]
+  });
+
+  LottieInteractivity.create({
+    player: "#skill4",
+    mode:"cursor",
+    container: "#skillwrap4",
+    
+    actions: [
+      { 
+        type: 'hover',   
+      },
+
+    ]
+  });
+
   LottieInteractivity.create({
     player: "#skill5",
-        mode:"cursor", 
-        actions: [
-        {
-            type: "hover",
-            forceFlag: false,
-        },
-        ]
-      });
+    mode:"scroll",
+    container: "#skillscrollmap",
+    actions: [
+      {
+        visibility: [.2, .7],
+        type: 'play',
+        delay:400,
+        frames: [0, 60],
+      },
+
+    ]
+  });
+
+  LottieInteractivity.create({
+    player: "#skill5",
+    mode:"cursor",
+    container: "#skillwrap5",
+    
+    actions: [
+      { 
+        type: 'hover',   
+      },
+
+    ]
+  });
 </script>
 
 <script>
   LottieInteractivity.create({
     player: "#skill6",
-        mode:"cursor", 
-        actions: [
-        {
-            type: "hover",
-            forceFlag: false,
-        },
-        ]
-      });
+    mode:"scroll",
+    container: "#skillscrollmap",
+    actions: [
+      {
+        visibility: [.2, .7],
+        type: 'play',
+        delay:500,
+        frames: [0, 60],
+      },
+
+    ]
+  });
+
+  LottieInteractivity.create({
+    player: "#skill6",
+    mode:"cursor",
+    container: "#skillwrap6",
+    
+    actions: [
+      { 
+        type: 'hover',   
+      },
+
+    ]
+  });
 </script>
+
 <script>
   LottieInteractivity.create({
     player: "#skill7",
-        mode:"cursor", 
-        actions: [
-        {
-            type: "hover",
-            forceFlag: false,
-        },
-        ]
-      });
+    mode:"scroll",
+    container: "#skillscrollmap",
+    actions: [
+      {
+        visibility: [.2, .7],
+        type: 'play',
+        delay:500,
+        frames: [0, 60],
+      },
+
+    ]
+  });
+
+  LottieInteractivity.create({
+    player: "#skill7",
+    mode:"cursor",
+    container: "#skillwrap7",
+    
+    actions: [
+      { 
+        type: 'hover',   
+      },
+
+    ]
+  });
+
 </script>
-
-
-
-
-
-
-
-
-
 
 <script>
   var copy = document.querySelector(".shots-wrap").cloneNode(true);
   document.querySelector(".shots-carousel").appendChild(copy);
 </script>
 
-<!-- <script>
-  document.getElementById('contactfab').addEventListener('click', function () {
-    const section = document.getElementById('contact');
-    window.scrollTo(0, document.body.scrollHeight);
-  });
-</script> -->
 
 
 <script>
@@ -758,9 +856,6 @@ player.addEventListener("ready", () => {
     });
   });
 
-  // window.onscroll = function () {
-  //   scroll();
-  // };
 
 
 
